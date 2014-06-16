@@ -1,0 +1,56 @@
+#add_file options
+add_file -verilog "D:/Actelprj/simdb-fpga/hdl/freq_dop.v"
+add_file -verilog "D:/Actelprj/simdb-fpga/hdl/freq.v"
+add_file -verilog "D:/Actelprj/simdb-fpga/hdl/led.v"
+add_file -verilog "D:/Actelprj/simdb-fpga/hdl/sim_db_fpga.v"
+set_option -top_module sim_db
+
+#device options
+set_option -technology ProASIC3
+set_option -part A3P400
+
+
+#project files
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+set_option -package FBGA256
+set_option -speed_grade -2
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+# mapper_options
+set_option -frequency 25
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Actel 500K
+set_option -run_prop_extract 1
+set_option -maxfan 24
+set_option -maxfan_hard3 0
+set_option -retiming 0
+set_option -report_path 0
+set_option -opcond COMWC
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+# Actel 500K
+set_option -globalthreshold 50
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+impl -active "synthesis"
+project -result_file "D:/Actelprj/simdb-fpga/synthesis/SIM_DB.edn"

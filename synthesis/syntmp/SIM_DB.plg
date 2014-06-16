@@ -1,0 +1,23 @@
+@P:  Worst Slack : 19.896
+@P:  sim_db|clock - Estimated Frequency : 49.7 MHz
+@P:  sim_db|clock - Requested Frequency : 25.0 MHz
+@P:  sim_db|clock - Estimated Period : 20.104
+@P:  sim_db|clock - Requested Period : 40.000
+@P:  sim_db|clock - Slack : 19.896
+@P:  Worst Slack(min analysis) : NA
+@P:  sim_db|clock - Estimated Frequency(min analysis) : 49.7 MHz
+@P:  sim_db|clock - Requested Frequency(min analysis) : 25.0 MHz
+@P:  sim_db|clock - Estimated Period(min analysis) : 20.104
+@P:  sim_db|clock - Requested Period(min analysis) : 40.000
+@P:  sim_db|clock - Slack(min analysis) : 19.896
+@P:  Total Area : 7967.0
+@P:  Total Area : 119.0
+@P:  Total Area : 991.0
+@P:  Total Area : 989.0
+@P:  Total Area : 989.0
+@P:  Total Area : 990.0
+@P:  Total Area : 990.0
+@P:  Total Area : 988.0
+@P:  Total Area : 184.0
+@P:  Total Area : 7967.0
+@P:  CPU Time : 0h:00m:35s

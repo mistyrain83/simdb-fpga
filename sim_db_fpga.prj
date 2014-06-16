@@ -1,0 +1,225 @@
+KEY LIBERO "9.1"
+KEY CAPTURE "9.1.5.1"
+KEY DEFAULT_IMPORT_LOC "D:\Actelprj\sim_db_fpga_va\hdl"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "228e3afa-98be-496b-b1e5-009c80b44c0f"
+KEY HDLTechnology "VERILOG"
+KEY VendorTechnology_Family "ProASIC3"
+KEY VendorTechnology_Die "IS6X4M1"
+KEY VendorTechnology_Package "fg256"
+KEY ProjectLocation "D:\Actelprj\simdb-fpga"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "sim_db::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\constraint\sim_db_io.pdc,pdc"
+STATE="utd"
+TIME="1400252067"
+SIZE="15832"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+ENDFILE
+VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
+STATE="ood"
+TIME="1400558409"
+SIZE="5950976"
+ENDFILE
+VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
+STATE="ood"
+TIME="1400558409"
+SIZE="213504"
+ENDFILE
+VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
+STATE="utd"
+TIME="1400563088"
+SIZE="1903"
+ENDFILE
+VALUE "<project>\hdl\freq.v,hdl"
+STATE="utd"
+TIME="1400558409"
+SIZE="9374"
+ENDFILE
+VALUE "<project>\hdl\freq_dop.v,hdl"
+STATE="utd"
+TIME="1402912770"
+SIZE="3061"
+ENDFILE
+VALUE "<project>\hdl\led.v,hdl"
+STATE="utd"
+TIME="1400252068"
+SIZE="1030"
+ENDFILE
+VALUE "<project>\hdl\sim_db_fpga.v,hdl"
+STATE="utd"
+TIME="1402911395"
+SIZE="38950"
+ENDFILE
+VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
+STATE="ood"
+TIME="1400558409"
+SIZE="3668635"
+ENDFILE
+VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1400552641"
+SIZE="379"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+LIST "sim_db::work"
+FILE "<project>\hdl\sim_db_fpga.v,hdl"
+LIST Other_Association
+VALUE "<project>\constraint\sim_db_io.pdc,pdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
+VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\SIM_DB.v,syn_hdl"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
+VALUE "<project>\designer\impl1\SIM_DB_ba.sdf,ba_sdf"
+VALUE "<project>\designer\impl1\SIM_DB_ba.v,ba_hdl"
+VALUE "<project>\designer\impl1\SIM_DB.prb,prb"
+VALUE "<project>\designer\impl1\SIM_DB.fdb,fdb"
+VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
+VALUE "<project>\designer\impl1\SIM_DB.stp,stp"
+VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+LIST sim_db
+VALUE "<project>\constraint\sim_db_io.pdc,pdc"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DumpVCD=false
+VCDFileName=power.vcd
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateViewDrawIni=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+GenerateHDLFromSchematic=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="Synplify AE"
+FUNCTION="Synthesis"
+TOOL="Synplify"
+LOCATION="d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="ModelSim AE"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="modelsim.exe"
+PARAM=""
+BATCH=0
+EndProfile
+NAME="WFL"
+FUNCTION="Stimulus"
+TOOL="WFL"
+LOCATION="syncad.exe"
+PARAM="-pwflite"
+BATCH=0
+EndProfile
+NAME="FlashPro"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="d:\Microsemi\Libero_v9.1\Designer\bin\FlashPro.exe"
+PARAM=""
+BATCH=0
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "sim_db::work"
+LIST Impl1
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
+VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\SIM_DB.v,syn_hdl"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\SIM_DB_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
+VALUE "<project>\designer\impl1\SIM_DB_ba.sdf,ba_sdf"
+VALUE "<project>\designer\impl1\SIM_DB_ba.v,ba_hdl"
+VALUE "<project>\designer\impl1\SIM_DB.prb,prb"
+VALUE "<project>\designer\impl1\SIM_DB.fdb,fdb"
+VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
+VALUE "<project>\designer\impl1\SIM_DB.stp,stp"
+VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+DESIGNFLOW:
+FILE:<project>\hdl\sim_db_fpga.v,hdl
+FILE:<project>\hdl\freq_dop.v,hdl
+ACTIVE_VIEW:1
+ENDLIST

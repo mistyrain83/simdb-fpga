@@ -1,0 +1,678 @@
+# Actel Physical design constraints file
+# Generated file
+
+# Version: 9.1 SP5 9.1.5.1
+# Family: ProASIC3 , Die: A3P400 , Package: 256 FBGA
+# Date generated: Tue May 13 14:11:34 2014 
+
+
+# 
+# IO banks setting
+# 
+
+
+# 
+# I/O constraints
+# 
+
+set_io {IO_ld[0]}     \
+    -pinname R11      \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[1]}     \
+    -pinname T11      \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[2]}     \
+    -pinname R10      \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[3]}     \
+    -pinname T10      \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[4]}     \
+    -pinname R9       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[5]}     \
+    -pinname T9       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[6]}     \
+    -pinname R8       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[7]}     \
+    -pinname T8       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[8]}     \
+    -pinname R7       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[9]}     \
+    -pinname T7       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[10]}    \
+    -pinname R6       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[11]}    \
+    -pinname T6       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[12]}    \
+    -pinname R5       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[13]}    \
+    -pinname T5       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[14]}    \
+    -pinname R4       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {IO_ld[15]}    \
+    -pinname T4       \
+    -fixed yes        \
+    -DIRECTION Inout
+
+
+set_io {I_la[0]}      \
+    -pinname H16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[1]}      \
+    -pinname H14      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[2]}      \
+    -pinname J16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[3]}      \
+    -pinname J14      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[4]}      \
+    -pinname K16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[5]}      \
+    -pinname K15      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[6]}      \
+    -pinname L16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[7]}      \
+    -pinname L15      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[8]}      \
+    -pinname M16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[9]}      \
+    -pinname M15      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[10]}     \
+    -pinname N16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io {I_la[11]}     \
+    -pinname N15      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_lcs_n        \
+    -pinname R13      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_lrd_n        \
+    -pinname T14      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_lwr_n        \
+    -pinname P16      \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_rst_n        \
+    -pinname A4       \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_spi_cs       \
+    -pinname P7       \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io I_tx3          \
+    -pinname T2       \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+set_io O_btm_cd1       \
+    -pinname B16       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_btm_cd2       \
+    -pinname B15       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_cspd1_clr     \
+    -pinname F15       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_cspd1_latch   \
+    -pinname F16       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_cspd_ch[0]}  \
+    -pinname B13       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_cspd_ch[1]}  \
+    -pinname A13       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_dop_pwm       \
+    -pinname B12       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[0]}       \
+    -pinname R3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[1]}       \
+    -pinname R2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[2]}       \
+    -pinname R1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[3]}       \
+    -pinname P4        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[4]}       \
+    -pinname P2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[5]}       \
+    -pinname P1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[6]}       \
+    -pinname N3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[7]}       \
+    -pinname N2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[8]}       \
+    -pinname N1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[9]}       \
+    -pinname M3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[10]}      \
+    -pinname M2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[11]}      \
+    -pinname M1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[12]}      \
+    -pinname L4        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[13]}      \
+    -pinname L2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[14]}      \
+    -pinname L1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[15]}      \
+    -pinname K3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[16]}      \
+    -pinname K2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[17]}      \
+    -pinname K1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[18]}      \
+    -pinname J4        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[19]}      \
+    -pinname J2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[20]}      \
+    -pinname J1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[21]}      \
+    -pinname H3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[22]}      \
+    -pinname H2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[23]}      \
+    -pinname H1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_io[24]}      \
+    -pinname G1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_la_dir        \
+    -pinname G15       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_la_oe_n       \
+    -pinname G16       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_ld_dir        \
+    -pinname T12       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_ld_oe_n       \
+    -pinname R12       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_led1          \
+    -pinname C5        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_led2          \
+    -pinname B4        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_mvb_lcs_n     \
+    -pinname D1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_mvb_rst_n     \
+    -pinname E1        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_out1          \
+    -pinname A14       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_out2          \
+    -pinname A15       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_rs485_de      \
+    -pinname T3        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[0]}  \
+    -pinname A12       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[1]}  \
+    -pinname B11       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[2]}  \
+    -pinname A11       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[3]}  \
+    -pinname B10       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[4]}  \
+    -pinname B9        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd1_ch[5]}  \
+    -pinname A9        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[0]}  \
+    -pinname B8        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[1]}  \
+    -pinname A8        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[2]}  \
+    -pinname B7        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[3]}  \
+    -pinname A7        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[4]}  \
+    -pinname B6        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io {O_spd2_ch[5]}  \
+    -pinname A6        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_spi_cl_cs_n   \
+    -pinname P6        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_ti_led        \
+    -pinname B2        \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io O_ti_lock       \
+    -pinname P10       \
+    -fixed yes         \
+    -DIRECTION Output
+
+
+set_io clock          \
+    -pinname A2       \
+    -fixed yes        \
+    -DIRECTION Input
+
+
+
+#
+# Non IO constraints
+#
+
+
+#
+# Old IO constraints, commented out for reference
+#
+
+# set_io {IO_ld[0]} -pinname R11 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[1]} -pinname T11 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[2]} -pinname R10 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[3]} -pinname T10 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[4]} -pinname R9 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[5]} -pinname T9 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[6]} -pinname R8 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[7]} -pinname T8 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[8]} -pinname R7 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[9]} -pinname T7 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[10]} -pinname R6 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[11]} -pinname T6 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[12]} -pinname R5 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[13]} -pinname T5 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[14]} -pinname R4 -fixed yes -DIRECTION Inout 
+# set_io {IO_ld[15]} -pinname T4 -fixed yes -DIRECTION Inout 
+# set_io {I_la[0]} -pinname H16 -fixed yes -DIRECTION Input 
+# set_io {I_la[1]} -pinname H14 -fixed yes -DIRECTION Input 
+# set_io {I_la[2]} -pinname J16 -fixed yes -DIRECTION Input 
+# set_io {I_la[3]} -pinname J14 -fixed yes -DIRECTION Input 
+# set_io {I_la[4]} -pinname K16 -fixed yes -DIRECTION Input 
+# set_io {I_la[5]} -pinname K15 -fixed yes -DIRECTION Input 
+# set_io {I_la[6]} -pinname L16 -fixed yes -DIRECTION Input 
+# set_io {I_la[7]} -pinname L15 -fixed yes -DIRECTION Input 
+# set_io {I_la[8]} -pinname M16 -fixed yes -DIRECTION Input 
+# set_io {I_la[9]} -pinname M15 -fixed yes -DIRECTION Input 
+# set_io {I_la[10]} -pinname N16 -fixed yes -DIRECTION Input 
+# set_io {I_la[11]} -pinname N15 -fixed yes -DIRECTION Input 
+# set_io I_lcs_n -pinname R13 -fixed yes -DIRECTION Input 
+# set_io I_lrd_n -pinname T14 -fixed yes -DIRECTION Input 
+# set_io I_lwr_n -pinname P16 -fixed yes -DIRECTION Input 
+# set_io I_rst_n -pinname A4 -fixed yes -DIRECTION Input 
+# set_io I_spi_cs -pinname P7 -fixed yes -DIRECTION Input 
+# set_io I_tx3 -pinname T2 -fixed yes -DIRECTION Input 
+# set_io O_btm_cd1 -pinname B16 -fixed yes -DIRECTION Output 
+# set_io O_btm_cd2 -pinname B15 -fixed yes -DIRECTION Output 
+# set_io O_cspd1_clr -pinname F15 -fixed yes -DIRECTION Output 
+# set_io O_cspd1_latch -pinname F16 -fixed yes -DIRECTION Output 
+# set_io {O_cspd_ch[0]} -pinname B13 -fixed yes -DIRECTION Output 
+# set_io {O_cspd_ch[1]} -pinname A13 -fixed yes -DIRECTION Output 
+# set_io O_dop_pwm -pinname A15 -fixed yes -DIRECTION Output 
+# set_io {O_io[0]} -pinname R3 -fixed yes -DIRECTION Output 
+# set_io {O_io[1]} -pinname R2 -fixed yes -DIRECTION Output 
+# set_io {O_io[2]} -pinname R1 -fixed yes -DIRECTION Output 
+# set_io {O_io[3]} -pinname P4 -fixed yes -DIRECTION Output 
+# set_io {O_io[4]} -pinname P2 -fixed yes -DIRECTION Output 
+# set_io {O_io[5]} -pinname P1 -fixed yes -DIRECTION Output 
+# set_io {O_io[6]} -pinname N3 -fixed yes -DIRECTION Output 
+# set_io {O_io[7]} -pinname N2 -fixed yes -DIRECTION Output 
+# set_io {O_io[8]} -pinname N1 -fixed yes -DIRECTION Output 
+# set_io {O_io[9]} -pinname M3 -fixed yes -DIRECTION Output 
+# set_io {O_io[10]} -pinname M2 -fixed yes -DIRECTION Output 
+# set_io {O_io[11]} -pinname M1 -fixed yes -DIRECTION Output 
+# set_io {O_io[12]} -pinname L4 -fixed yes -DIRECTION Output 
+# set_io {O_io[13]} -pinname L2 -fixed yes -DIRECTION Output 
+# set_io {O_io[14]} -pinname L1 -fixed yes -DIRECTION Output 
+# set_io {O_io[15]} -pinname K3 -fixed yes -DIRECTION Output 
+# set_io {O_io[16]} -pinname K2 -fixed yes -DIRECTION Output 
+# set_io {O_io[17]} -pinname K1 -fixed yes -DIRECTION Output 
+# set_io {O_io[18]} -pinname J4 -fixed yes -DIRECTION Output 
+# set_io {O_io[19]} -pinname J2 -fixed yes -DIRECTION Output 
+# set_io {O_io[20]} -pinname J1 -fixed yes -DIRECTION Output 
+# set_io {O_io[21]} -pinname H3 -fixed yes -DIRECTION Output 
+# set_io {O_io[22]} -pinname H2 -fixed yes -DIRECTION Output 
+# set_io {O_io[23]} -pinname H1 -fixed yes -DIRECTION Output 
+# set_io {O_io[24]} -pinname G1 -fixed yes -DIRECTION Output 
+# set_io O_la_dir -pinname G15 -fixed yes -DIRECTION Output 
+# set_io O_la_oe_n -pinname G16 -fixed yes -DIRECTION Output 
+# set_io O_ld_dir -pinname T12 -fixed yes -DIRECTION Output 
+# set_io O_ld_oe_n -pinname R12 -fixed yes -DIRECTION Output 
+# set_io O_led1 -pinname C5 -fixed yes -DIRECTION Output 
+# set_io O_led2 -pinname B4 -fixed yes -DIRECTION Output 
+# set_io O_mvb_lcs_n -pinname D1 -fixed yes -DIRECTION Output 
+# set_io O_mvb_rst_n -pinname E1 -fixed yes -DIRECTION Output 
+# set_io O_out1 -pinname A14 -fixed yes -DIRECTION Output 
+# set_io O_out2 -pinname A10 -fixed yes -DIRECTION Output 
+# set_io O_rs485_de -pinname T3 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[0]} -pinname A12 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[1]} -pinname B11 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[2]} -pinname A11 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[3]} -pinname B10 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[4]} -pinname B9 -fixed yes -DIRECTION Output 
+# set_io {O_spd1_ch[5]} -pinname A9 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[0]} -pinname B8 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[1]} -pinname B7 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[2]} -pinname A8 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[3]} -pinname A7 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[4]} -pinname B6 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[5]} -pinname A6 -fixed yes -DIRECTION Output 
+# set_io O_spi_cl_cs_n -pinname P6 -fixed yes -DIRECTION Output 
+# set_io O_ti_led -pinname B2 -fixed yes -DIRECTION Output 
+# set_io O_ti_lock -pinname P10 -fixed yes -DIRECTION Output 
+# set_io clock -pinname A2 -fixed yes -DIRECTION Input 

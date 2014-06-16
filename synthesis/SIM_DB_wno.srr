@@ -1,0 +1,17 @@
+Synopsys Actel Technology Mapper, Version mapact, Build 023R, Built Sep 29 2010 09:29:00
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+Product Version E-2010.09A-1
+@N: MF249 |Running in 32-bit mode.
+@N: MF258 |Gated clock conversion disabled 
+Writing Analyst data base D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srm
+Finished Writing Netlist Databases (Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 55MB)
+
+Writing EDIF Netlist and constraint files
+E-2010.09A-1
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:00s; Memory used current: 54MB peak: 55MB)
+
+Mapper successful!
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Nov 29 15:32:17 2013
+
+###########################################################]

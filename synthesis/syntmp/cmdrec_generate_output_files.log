@@ -1,0 +1,7 @@
+d:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -part A3P400  -package FBGA144  -grade -2   -maxfan 24  -globalthreshold 50 -opcond COMWC    -report_path 0       -top_level_module  SIM_DB  -write_netlists -oedif D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.edn  -freq 100.000  D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srs  -devicelib  d:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v  -ologparam  D:\Actelprj\sim_db_fpga_va\synthesis\syntmp\SIM_DB.plg  -osyn  D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srm  -prjdir D:\Actelprj\sim_db_fpga_va\synthesis\  -loga "D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB_wno.srr"
+rc:0 success:1
+D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srs|i|1385230179
+d:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v|i|1286419904
+D:\Actelprj\sim_db_fpga_va\synthesis\syntmp\SIM_DB.plg|o|1385230188
+D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srm|o|1385230188
+d:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe|i|1286419882

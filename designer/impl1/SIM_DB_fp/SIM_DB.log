@@ -1,0 +1,29 @@
+FlashPro
+Version: 9.1.5.1
+Release: v9.1 SP5
+
+Software Version: 9.1.5.1
+PDB file 'D:\Actelprj\SIM_DB_0xB520.pdb' has been loaded successfully.
+DESIGN : sim_db;  CHECKSUM : 1A20;  PDB_VERSION : 1.7
+Driver : 3.0.0 build 1
+programmer '12611' : FlashPro3
+Opened 'D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB_fp\SIM_DB.pro'
+PDB file 'D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.pdb' has been loaded successfully.
+DESIGN : sim_db;  CHECKSUM : FF6E;  PDB_VERSION : 1.7
+programmer '12611' : Scan Chain...
+Warning: programmer '12611' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '12611' : Scan Chain PASSED.
+programmer '12611' : Executing action PROGRAM
+programmer '12611' : EXPORT FSN[48] = 80f179609098
+programmer '12611' : Erase ...
+programmer '12611' : Completed erase
+programmer '12611' : Programming FPGA Array
+programmer '12611' : Verifying FPGA Array
+programmer '12611' :         Verifying FPGA Array -- pass
+programmer '12611' : Finished: Mon Jun 16 17:59:51 2014 (Elapsed time 00:00:50)
+programmer '12611' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: Project 'SIM_DB' has been modified. Do you want to save it? [YES]

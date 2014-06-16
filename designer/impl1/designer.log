@@ -1,0 +1,290 @@
+Actel Designer Software
+Version: 9.1.5.1
+Release: v9.1 SP5
+
+
+ Netlist Reading Time = 2.0 seconds
+Imported the files:
+   D:\Actelprj\simdb-fpga\synthesis\SIM_DB.edn
+   D:\Actelprj\simdb-fpga\synthesis\SIM_DB_sdc.sdc
+   D:\Actelprj\simdb-fpga\constraint\sim_db_io.pdc
+
+The Import command succeeded ( 00:00:17 )
+Info: The design D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.adb was last modified by software
+      version 9.1.5.1.
+Opened an existing Libero design D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.adb.
+'BA_NAME' set to 'sim_db_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'D:\Actelprj\simdb-fpga\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+
+The Execute Script command succeeded ( 00:00:00 )
+Warning: The following files already exist:
+         
+         D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.pdb
+         
+         Do you want to replace the files? [YES]
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3
+Device      : A3P400
+Package     : 256 FBGA
+Source      : D:\Actelprj\simdb-fpga\synthesis\SIM_DB.edn
+              D:\Actelprj\simdb-fpga\synthesis\SIM_DB_sdc.sdc
+              D:\Actelprj\simdb-fpga\constraint\sim_db_io.pdc
+Format      : EDIF
+Topcell     : sim_db
+Speed grade : -2
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: Top level port I_lclk is not connected to any IO pad
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        390
+
+    Total macros optimized  390
+
+There were 0 error(s) and 1 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:   7577  Total:   9216   (82.22%)
+    IO (W/ clocks)             Used:     93  Total:    178   (52.25%)
+    Differential IO            Used:      0  Total:     38   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:     12   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 6      | 6  (100.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 5770         | 5770
+    SEQ     | 1807         | 1807
+
+I/O Function:
+
+    Type                          | w/o register  | w/ register  | w/ DDR register
+    ------------------------------|---------------|--------------|----------------
+    Input I/O                     | 19            | 0            | 0
+    Output I/O                    | 58            | 0            | 0
+    Bidirectional I/O             | 16            | 0            | 0
+    Differential Input I/O Pairs  | 0             | 0            | 0
+    Differential Output I/O Pairs | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 19    | 58     | 16
+
+I/O Placement:
+
+    Locked  :  93 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    1808    SET/RESET_NET Net   : O_mvb_rst_n_c
+                          Driver: i_CLKINT2
+                          Source: NETLIST
+    1807    CLK_NET       Net   : W_clk
+                          Driver: i_CLKINT1
+                          Source: NETLIST
+    375     INT_NET       Net   : I_la_c[1]
+                          Driver: I_la_pad_RNIOC03[1]
+                          Source: NETLIST
+    155     INT_NET       Net   : I_la_c[2]
+                          Driver: I_la_pad_RNIPC03[2]
+                          Source: NETLIST
+    124     INT_NET       Net   : I_la_c[3]
+                          Driver: I_la_pad_RNIQC03[3]
+                          Source: NETLIST
+    101     INT_NET       Net   : I_la_c[5]
+                          Driver: I_la_pad_RNISC03[5]
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    50      INT_NET       Net   : IO_ld_in[0]
+                          Driver: IO_ld_pad[0]
+    50      INT_NET       Net   : IO_ld_in[1]
+                          Driver: IO_ld_pad[1]
+    48      INT_NET       Net   : IO_ld_in[2]
+                          Driver: IO_ld_pad[2]
+    47      INT_NET       Net   : IO_ld_in[3]
+                          Driver: IO_ld_pad[3]
+    47      INT_NET       Net   : IO_ld_in[4]
+                          Driver: IO_ld_pad[4]
+    47      INT_NET       Net   : IO_ld_in[5]
+                          Driver: IO_ld_pad[5]
+    46      INT_NET       Net   : IO_ld_in[6]
+                          Driver: IO_ld_pad[6]
+    46      INT_NET       Net   : IO_ld_in[7]
+                          Driver: IO_ld_pad[7]
+    46      INT_NET       Net   : IO_ld_in[8]
+                          Driver: IO_ld_pad[8]
+    46      INT_NET       Net   : IO_ld_in[9]
+                          Driver: IO_ld_pad[9]
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    57      INT_NET       Net   : I_la_c[4]
+                          Driver: I_la_pad[4]
+    50      INT_NET       Net   : IO_ld_in[0]
+                          Driver: IO_ld_pad[0]
+    50      INT_NET       Net   : IO_ld_in[1]
+                          Driver: IO_ld_pad[1]
+    48      INT_NET       Net   : IO_ld_in[2]
+                          Driver: IO_ld_pad[2]
+    47      INT_NET       Net   : IO_ld_in[3]
+                          Driver: IO_ld_pad[3]
+    47      INT_NET       Net   : IO_ld_in[4]
+                          Driver: IO_ld_pad[4]
+    47      INT_NET       Net   : IO_ld_in[5]
+                          Driver: IO_ld_pad[5]
+    46      INT_NET       Net   : IO_ld_in[6]
+                          Driver: IO_ld_pad[6]
+    46      INT_NET       Net   : IO_ld_in[7]
+                          Driver: IO_ld_pad[7]
+    46      INT_NET       Net   : IO_ld_in[8]
+                          Driver: IO_ld_pad[8]
+
+
+SDC Import: Begin processing constraints...
+
+
+
+SDC Import: End processing constraints
+
+
+The Compile command succeeded ( 00:00:32 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Mon Jun 16 17:40:04 2014
+
+Placer Finished: Mon Jun 16 17:46:04 2014
+Total Placer CPU Time:     00:06:00
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: SIM_DB                          Started: Mon Jun 16 17:46:32 2014
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: SIM_DB                          
+Finished: Mon Jun 16 17:48:49 2014
+Total CPU Time:     00:02:17            Total Elapsed Time: 00:02:17
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+TIMER: Max delay timing requirements have been met.
+TIMER: Min delay timing requirements have been met.
+
+The Layout command succeeded ( 00:09:38 )
+
+The Export-map command succeeded ( 00:00:38 )
+Warning: Overwriting the existing file: D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.pdb.
+Wrote to the file: D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.pdb
+CHECKSUM: FF6E
+
+The Generate programming file command succeeded ( 00:10:59 )
+Design saved to file D:\Actelprj\simdb-fpga\designer\impl1\SIM_DB.adb.
+Design closed.
+
