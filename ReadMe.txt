@@ -3,6 +3,9 @@ simdb-fpga
 
 sim_db board fpga project, running on Actel A3P400 256pin.
 
+V2.1.2 Version: 0xB616; hard reset; verified.
+1. fix pwm signal delay problem.
+
 V2.1.1 Version: 0xB513; hard reset; Verified.
 fpga version 0xB513.
 1. fix pin assign problem.
