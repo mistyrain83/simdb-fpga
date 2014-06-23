@@ -1,16 +1,16 @@
 #-- Synopsys, Inc.
 #-- Version E-2010.09A-1
-#-- Project file D:\Actelprj\simdb-fpga\synthesis\scratchproject.prs
+#-- Project file E:\GitHub\simdb-fpga\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "D:/Actelprj/simdb-fpga/hdl/freq_dop.v"
-add_file -verilog "D:/Actelprj/simdb-fpga/hdl/freq.v"
-add_file -verilog "D:/Actelprj/simdb-fpga/hdl/led.v"
-add_file -verilog "D:/Actelprj/simdb-fpga/hdl/sim_db_fpga.v"
+add_file -verilog "E:/GitHub/simdb-fpga/hdl/freq_dop.v"
+add_file -verilog "E:/GitHub/simdb-fpga/hdl/freq.v"
+add_file -verilog "E:/GitHub/simdb-fpga/hdl/led.v"
+add_file -verilog "E:/GitHub/simdb-fpga/hdl/sim_db_fpga.v"
 
 
 #implementation: "synthesis"
-impl -add D:\Actelprj\simdb-fpga\synthesis -type fpga
+impl -add E:\GitHub\simdb-fpga\synthesis -type fpga
 
 #device options
 set_option -technology ProASIC3
@@ -58,5 +58,5 @@ set_option -resource_sharing 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "D:/Actelprj/simdb-fpga/synthesis/SIM_DB.edn"
+project -result_file "E:/GitHub/simdb-fpga/synthesis/SIM_DB.edn"
 impl -active "synthesis"

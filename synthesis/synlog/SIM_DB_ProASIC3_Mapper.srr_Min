@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Jun 16 17:37:41 2014
+# Timing Report written on Mon Jun 23 18:52:42 2014
 #
 
 
@@ -27,7 +27,7 @@ Worst slack in design: NA
                    Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
 ----------------------------------------------------------------------------------------------------------------------
-sim_db|clock       25.0 MHz      49.7 MHz      40.000        20.104        19.896     inferred     Inferred_clkgroup_0
+sim_db|clock       25.0 MHz      47.3 MHz      40.000        21.137        18.863     inferred     Inferred_clkgroup_0
 ======================================================================================================================
 
 

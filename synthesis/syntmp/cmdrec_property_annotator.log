@@ -1,8 +1,8 @@
-d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -part A3P400  -package FBGA144  -grade -2   -maxfan 24  -globalthreshold 50 -opcond COMWC    -report_path 0       -top_level_module  sim_db  -oedif D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.edn  -freq 100.000  D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srs  -qsap  D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.sap  -devicelib  d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v  -ologparam  D:\Actelprj\sim_db_fpga_va\synthesis\syntmp\SIM_DB.plg  -osyn  D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srm  -prjdir D:\Actelprj\sim_db_fpga_va\synthesis\  -log "D:\Actelprj\sim_db_fpga_va\synthesis\synlog\SIM_DB_property_annotator.srr"
+d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -part A3P400  -package FBGA256  -grade -2   -maxfan 24  -globalthreshold 50 -opcond COMWC    -report_path 0       -top_level_module  sim_db  -oedif E:\GitHub\simdb-fpga\synthesis\SIM_DB.edn  -freq 25.000  E:\GitHub\simdb-fpga\synthesis\SIM_DB.srs  -qsap  E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap  -devicelib  d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v  -ologparam  E:\GitHub\simdb-fpga\synthesis\syntmp\SIM_DB.plg  -osyn  E:\GitHub\simdb-fpga\synthesis\SIM_DB.srm  -prjdir E:\GitHub\simdb-fpga\synthesis\  -log "E:\GitHub\simdb-fpga\synthesis\synlog\SIM_DB_property_annotator.srr"
 rc:0 success:1
-D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srs|i|1385973236
-D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.sap|o|1385973237
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.srs|i|1403520743
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap|o|1403520744
 d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v|i|1286419904
-D:\Actelprj\sim_db_fpga_va\synthesis\syntmp\SIM_DB.plg|o|1385973236
-D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.srm|o|1385972987
+E:\GitHub\simdb-fpga\synthesis\syntmp\SIM_DB.plg|o|1403520744
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.srm|o|1403514826
 d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe|i|1286419882

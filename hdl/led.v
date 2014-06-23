@@ -12,8 +12,8 @@
  * \description : init file.
  *
  * \version :V1.2
- * \date :2014-05-02 Qixb
- * \description : .
+ * \date :2014-06-23 Qixb
+ * \description : modify led timeout from 1s to 0.6s.
  *
  */
 
@@ -23,7 +23,7 @@ module led(
      input            I_clk,
      output           O_led
 );
-    parameter T1000MS = 25000000;  // 25M Clock, debug led timeout 1s
+    parameter T1000MS = 15000000;  // 25M Clock, debug led timeout 0.6s
     
     reg [25:0] R_cnt;    // conter
     reg R_led;

@@ -1,0 +1,35 @@
+VB版本与VA版本相比，只是互换了TMS和多普勒雷达的串口。请知悉！
+
+** SIM_DB硬件版本VB
+串口：
+VC板调试串口使用PPC8349的UART1 - tty0
+Doppler Rader - RS485使用VC板输出的RS422接口（对应PPC8349的UART2） - tty1
+BTM1 - RS422_A使用VC板16C554扩出来的串口1 - tty2
+BTM2 - RS422_B使用VC板16C554扩出来的串口2 - tty3
+TMS - RS485使用VC板16C554扩出来的串口3 - tty4
+TI - RS232使用VC板15C554扩出来的串口4 - tty5
+
+SPI接口：
+电流环1使用VC板的SPI接口
+
+网口：
+调试网口使用VC板的调试网口（与调试串口共用一个RJ45，从前面板出），由local bus从DM9000扩的网口 
+对外通信网口使用VC板的千兆网口2，对应PPC8349的TSEC2 - mottsec1
+
+** SIM_DB硬件版本VA
+串口：
+VC板调试串口使用PPC8349的UART1 - tty0
+TMS - RS485使用VC板输出的RS422接口（对应PPC8349的UART2） - tty1
+BTM1 - RS422_A使用VC板16C554扩出来的串口1 - tty2
+BTM2 - RS422_B使用VC板16C554扩出来的串口2 - tty3
+Doppler Rader - RS485使用VC板16C554扩出来的串口3 - tty4
+TI - RS232使用VC板15C554扩出来的串口4 - tty5
+
+SPI接口：
+电流环1使用VC板的SPI接口
+
+网口：
+调试网口使用VC板的调试网口（与调试串口共用一个RJ45，从前面板出），由local bus从DM9000扩的网口 
+对外通信网口使用VC板的千兆网口2，对应PPC8349的TSEC2 - mottsec1
+
+

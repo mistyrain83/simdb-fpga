@@ -32,6 +32,11 @@
 //-- $Revision: 2.0.2 $
 //-- $Author: qixiangbing $
 //-- $Log: fixed pulse1,2 diff problem $
+//--
+//-- $Date: 2014-06-23 17:17 $
+//-- $Revision: 2.0.3 $
+//-- $Author: qixiangbing $
+//-- $Log: add current tachometer feature $
 //-------------------------------------------------------------------------------
 
 module sim_db
@@ -146,6 +151,9 @@ parameter FPGA_SPD5_INIT_HIGH_ADDR= 12'h8c6;
 parameter FPGA_SPD6_INIT_LOW_ADDR= 12'h8c8;
 parameter FPGA_SPD6_INIT_HIGH_ADDR= 12'h8ca;
 
+// SPI SELECT
+parameter FPGA_SPI_SELECT_ADDR = 12'h8d0;
+
 parameter FPGA_VER_CSR = 16'hB616; // fpga version
 
 //--------------------REG & WIRE--------------------------
@@ -230,7 +238,7 @@ reg  [15:0] R_SPD5_PLUSE           ;
 reg  [15:0] R_SPD6_PLUSE           ;
 reg  [5:0]  R_SPD_MODE             ;
 reg  [5:0]  R_limited_Pluse_finished;
-reg  [12:0] R_SPD_load             ;
+reg  [12:0] R_SPD_LOAD             ;
 reg  [12:0] R_OUTPUT_CONTROL       ;
 reg  [2:0]  R_CD_TI_OUTPUT         ;
 
@@ -250,6 +258,8 @@ reg  [15:0] R_SPD5_INIT_PULSE_LOW;
 reg  [15:0] R_SPD5_INIT_PULSE_HIGH;
 reg  [15:0] R_SPD6_INIT_PULSE_LOW;
 reg  [15:0] R_SPD6_INIT_PULSE_HIGH;
+
+reg [15:0] R_SPI_SELECT           ;
 
 assign O_io = 25'h0;
 // assign O_io[24] = O_ld_dir;
@@ -328,14 +338,14 @@ assign W_localbus_addr = I_la;
 assign O_mvb_rst_n = W_reset_n;
 assign O_mvb_lcs_n = (W_localbus_addr[11:8]==4'b0100)? 1'b0: 1'b1;
 
-//---------------------CURRENT LOOP-----------------------
-assign O_cspd1_latch = 1'b0;
+//---------------------CURRENT TACHOMETER-----------------------
+assign O_cspd1_latch = ((!R_SPI_SELECT[0]) | I_spi_cs);
 assign O_cspd1_clr = 1'b0;
 assign O_cspd_ch[0] = (R_OUTPUT_CONTROL[0] & W_O_normal_spd1 );
 assign O_cspd_ch[1] = (R_OUTPUT_CONTROL[1] & W_O_normal_spd2 );
 
-//---------------------SPI-----------------------
-assign O_spi_cl_cs_n = I_spi_cs;
+//---------------------CURRENT LOOP-----------------------
+assign O_spi_cl_cs_n = ((R_SPI_SELECT[0]) | I_spi_cs);
 
 //---------------------RS485-----------------------
 assign O_rs485_de = !(I_tx3);
@@ -406,7 +416,7 @@ always @(negedge W_reset_n or posedge W_clk)
              R_OUTPUT_CONTROL[12:0]         <=   12'b0_0000_0000_0000;
              R_CD_TI_OUTPUT[2:0]            <=   3'b000;
              R_SPD_MODE[5:0]                <=   6'b00_0000;
-             R_SPD_load[12:0]               <=   12'b0_0000_0000_0000;
+             R_SPD_LOAD[12:0]               <=   12'b0_0000_0000_0000;
              R_SPD1_FCONFIG_LOW  [15:0]     <=   16'h0000; 
              R_SPD1_FCONFIG_HIGH [15:0]     <=   16'h0000; 
              R_SPD2_FCONFIG_LOW  [15:0]     <=   16'h0000; 
@@ -456,6 +466,8 @@ always @(negedge W_reset_n or posedge W_clk)
              R_SPD5_INIT_PULSE_HIGH[15:0] <=   16'h0000 ;
              R_SPD6_INIT_PULSE_LOW[15:0]  <=   16'h0000 ;
              R_SPD6_INIT_PULSE_HIGH[15:0] <=   16'h0000 ;
+			 
+			 R_SPI_SELECT[15:0]           <=   16'h0000 ;
           end
       else
           begin
@@ -470,7 +482,7 @@ always @(negedge W_reset_n or posedge W_clk)
                 FPGA_OUTPUT_CONTROL_ADDR   :     R_FPGA_REG[15:0]         <=   {3'b000,R_OUTPUT_CONTROL[12:0]}  ;
                 FPGA_CD_TI_OUTPUT_ADDR :         R_FPGA_REG[15:0]         <=   {13'b0000_0000_0000_0000_0,R_CD_TI_OUTPUT[2:0]}     ;
                 FPGA_SPD_MODE_ADDR:              R_FPGA_REG[15:0]         <=   {10'b0000_0000_00,R_SPD_MODE[5:0]}      ;
-                FPGA_SPD_LOAD_ADDR:              R_FPGA_REG[15:0]         <=   {3'b000,R_SPD_load[12:0]}   ;
+                FPGA_SPD_LOAD_ADDR:              R_FPGA_REG[15:0]         <=   {3'b000,R_SPD_LOAD[12:0]}   ;
                 FPGA_SPD1_FCONFIG_LOW_ADDR:      R_FPGA_REG[15:0]         <=   R_SPD1_FCONFIG_LOW  [15:0]  ;
                 FPGA_SPD1_FCONFIG_HIGH_ADDR:     R_FPGA_REG[15:0]         <=   R_SPD1_FCONFIG_HIGH [15:0]  ;
                 FPGA_SPD2_FCONFIG_LOW_ADDR:      R_FPGA_REG[15:0]         <=   R_SPD2_FCONFIG_LOW  [15:0]  ;
@@ -520,6 +532,8 @@ always @(negedge W_reset_n or posedge W_clk)
                 FPGA_SPD5_INIT_HIGH_ADDR:     R_FPGA_REG[15:0]         <=   W_SPD5_REPORT_PULSE_HIGH [15:0]  ;
                 FPGA_SPD6_INIT_LOW_ADDR :     R_FPGA_REG[15:0]         <=   W_SPD6_REPORT_PULSE_LOW  [15:0]  ;             
                 FPGA_SPD6_INIT_HIGH_ADDR:     R_FPGA_REG[15:0]         <=   W_SPD6_REPORT_PULSE_HIGH [15:0]  ;
+				
+				FPGA_SPI_SELECT_ADDR:         R_FPGA_REG[15:0]         <=   R_SPI_SELECT[15:0]               ;
 
                default:
                  begin 
@@ -530,10 +544,10 @@ always @(negedge W_reset_n or posedge W_clk)
            
                 case(W_localbus_addr[11:0])
                    
-                   FPGA_OUTPUT_CONTROL_ADDR:            R_OUTPUT_CONTROL[12:0]           <=         IO_ld[12:0]   ;
-                   FPGA_CD_TI_OUTPUT_ADDR :             R_CD_TI_OUTPUT[2:0]              <=         IO_ld[2:0]   ;
-                   FPGA_SPD_MODE_ADDR:                  R_SPD_MODE[5:0]                  <=         IO_ld[5:0]   ;
-                   FPGA_SPD_LOAD_ADDR:                  R_SPD_load[12:0]                 <=        IO_ld[12:0]   ;
+                   FPGA_OUTPUT_CONTROL_ADDR:            R_OUTPUT_CONTROL[12:0]           <=         IO_ld[12:0]    ;
+                   FPGA_CD_TI_OUTPUT_ADDR :             R_CD_TI_OUTPUT[2:0]              <=         IO_ld[2:0]     ;
+                   FPGA_SPD_MODE_ADDR:                  R_SPD_MODE[5:0]                  <=         IO_ld[5:0]     ;
+                   FPGA_SPD_LOAD_ADDR:                  R_SPD_LOAD[12:0]                 <=         IO_ld[12:0]    ;
                    FPGA_SPD1_FCONFIG_LOW_ADDR:          R_SPD1_FCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD1_FCONFIG_HIGH_ADDR:         R_SPD1_FCONFIG_HIGH [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD2_FCONFIG_LOW_ADDR:          R_SPD2_FCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
@@ -549,7 +563,7 @@ always @(negedge W_reset_n or posedge W_clk)
                    FPGA_SPD1_PCONFIG_LOW_ADDR :         R_SPD1_PCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD1_PCONFIG_HIGH_ADDR:         R_SPD1_PCONFIG_HIGH [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD2_PCONFIG_LOW_ADDR :         R_SPD2_PCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
-                   FPGA_SPD2_PCONFIG_HIGH_ADDR:         R_SPD2_PCONFIG_HIGH [15:0]       <=         IO_ld[15:0]       ;
+                   FPGA_SPD2_PCONFIG_HIGH_ADDR:         R_SPD2_PCONFIG_HIGH [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD3_PCONFIG_LOW_ADDR :         R_SPD3_PCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD3_PCONFIG_HIGH_ADDR:         R_SPD3_PCONFIG_HIGH [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD4_PCONFIG_LOW_ADDR :         R_SPD4_PCONFIG_LOW  [15:0]       <=         IO_ld[15:0]    ;
@@ -566,8 +580,8 @@ always @(negedge W_reset_n or posedge W_clk)
                    FPGA_SPD4_PLUSE_ADDR:                R_SPD4_PLUSE[15:0]               <=         IO_ld[15:0]    ;
                    FPGA_SPD5_PLUSE_ADDR:                R_SPD5_PLUSE[15:0]               <=         IO_ld[15:0]    ;
                    FPGA_SPD6_PLUSE_ADDR:                R_SPD6_PLUSE[15:0]               <=         IO_ld[15:0]    ;
-                   FPGA_IO_OUTPUT_ADDR:                 R_IO_OUTPUT[1:0]                 <=         IO_ld[1:0]    ;
-                   FPGA_IO_LED_ADDR:                    R_IO_LED[1:0]                    <=         IO_ld[1:0];
+                   FPGA_IO_OUTPUT_ADDR:                 R_IO_OUTPUT[1:0]                 <=         IO_ld[1:0]     ;
+                   FPGA_IO_LED_ADDR:                    R_IO_LED[1:0]                    <=         IO_ld[1:0]     ;
 
                    FPGA_SPD1_INIT_LOW_ADDR :         R_SPD1_INIT_PULSE_LOW  [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD1_INIT_HIGH_ADDR:         R_SPD1_INIT_PULSE_HIGH [15:0]       <=         IO_ld[15:0]    ;
@@ -582,6 +596,8 @@ always @(negedge W_reset_n or posedge W_clk)
                    FPGA_SPD5_INIT_HIGH_ADDR:         R_SPD5_INIT_PULSE_HIGH [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD6_INIT_LOW_ADDR :         R_SPD6_INIT_PULSE_LOW  [15:0]       <=         IO_ld[15:0]    ;
                    FPGA_SPD6_INIT_HIGH_ADDR:         R_SPD6_INIT_PULSE_HIGH [15:0]       <=         IO_ld[15:0]    ;
+				   
+				   FPGA_SPI_SELECT_ADDR:             R_SPI_SELECT[15:0]                  <=         IO_ld[15:0]    ;
                    default:
                     begin
                         R_FPGA_REG[15:0] <= R_FPGA_REG[15:0];
@@ -608,7 +624,7 @@ freq_dop module_freq_dop(
      .I_reset_n (W_reset_n),
      .I_clk   (W_clk),
      .I_freq    ({R_DOP_FCONFIG_HIGH[15:0],R_DOP_FCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[12]),
+     .I_load    (R_SPD_LOAD[12]),
      .I_stat    (R_OUTPUT_CONTROL[12]),
 	 .O_spd     (W_O_dop_pwm)
       ); 
@@ -619,7 +635,7 @@ freq module_freq1(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD1_FCONFIG_HIGH[15:0],R_SPD1_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD1_PCONFIG_HIGH[15:0],R_SPD1_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[1:0]), 
+     .I_load    (R_SPD_LOAD[1:0]), 
      .I_stat    (R_OUTPUT_CONTROL[0] | R_OUTPUT_CONTROL[1]),
      .I_pluse_number (R_SPD1_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[0]), 
@@ -636,7 +652,7 @@ freq module_freq2(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD2_FCONFIG_HIGH[15:0],R_SPD2_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD2_PCONFIG_HIGH[15:0],R_SPD2_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[3:2]), 
+     .I_load    (R_SPD_LOAD[3:2]), 
      .I_stat    (R_OUTPUT_CONTROL[2] | R_OUTPUT_CONTROL[3]),
      .I_pluse_number (R_SPD2_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[1]), 
@@ -653,7 +669,7 @@ freq module_freq3(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD3_FCONFIG_HIGH[15:0],R_SPD3_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD3_PCONFIG_HIGH[15:0],R_SPD3_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[5:4]), 
+     .I_load    (R_SPD_LOAD[5:4]), 
      .I_stat    (R_OUTPUT_CONTROL[4] | R_OUTPUT_CONTROL[5]),
      .I_pluse_number (R_SPD3_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[2]), 
@@ -670,7 +686,7 @@ freq module_freq4(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD4_FCONFIG_HIGH[15:0],R_SPD4_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD4_PCONFIG_HIGH[15:0],R_SPD4_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[7:6]), 
+     .I_load    (R_SPD_LOAD[7:6]), 
      .I_stat    (R_OUTPUT_CONTROL[6] | R_OUTPUT_CONTROL[7]),
      .I_pluse_number (R_SPD4_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[3]), 
@@ -687,7 +703,7 @@ freq module_freq5(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD5_FCONFIG_HIGH[15:0],R_SPD5_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD5_PCONFIG_HIGH[15:0],R_SPD5_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[9:8]), 
+     .I_load    (R_SPD_LOAD[9:8]), 
      .I_stat    (R_OUTPUT_CONTROL[8] | R_OUTPUT_CONTROL[9]),
      .I_pluse_number (R_SPD5_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[4]), 
@@ -704,7 +720,7 @@ freq module_freq6(
      .I_clk   (W_clk),
      .I_freq    ({R_SPD6_FCONFIG_HIGH[15:0],R_SPD6_FCONFIG_LOW[15:0]}),
      .I_pha     ({R_SPD6_PCONFIG_HIGH[15:0],R_SPD6_PCONFIG_LOW[15:0]}),
-     .I_load    (R_SPD_load[11:10]), 
+     .I_load    (R_SPD_LOAD[11:10]), 
      .I_stat    (R_OUTPUT_CONTROL[10] | R_OUTPUT_CONTROL[11]),
      .I_pluse_number (R_SPD6_PLUSE[15:0]), 
      .I_limited_Pluse(R_SPD_MODE[5]), 

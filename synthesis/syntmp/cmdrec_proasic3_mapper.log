@@ -1,13 +1,13 @@
-d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -part A3P400  -package FBGA256  -grade -2   -maxfan 24  -globalthreshold 50 -opcond COMWC    -report_path 0       -top_level_module  sim_db  -mp 1 -prjfile  D:\Actelprj\simdb-fpga\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro_actel  -oedif D:\Actelprj\simdb-fpga\synthesis\SIM_DB.edn  -freq 25.000  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.srs  -sap  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.sap  -otap  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.tap  -omap  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.map  -devicelib  d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v  -sap  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.sap  -ologparam  D:\Actelprj\simdb-fpga\synthesis\syntmp\SIM_DB.plg  -osyn  D:\Actelprj\simdb-fpga\synthesis\SIM_DB.srm  -prjdir D:\Actelprj\simdb-fpga\synthesis\  -log  D:\Actelprj\simdb-fpga\synthesis\synlog\SIM_DB_ProASIC3_Mapper.srr 
+d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -part A3P400  -package FBGA256  -grade -2   -maxfan 24  -globalthreshold 50 -opcond COMWC    -report_path 0       -top_level_module  sim_db  -mp 1 -prjfile  E:\GitHub\simdb-fpga\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro_actel  -oedif E:\GitHub\simdb-fpga\synthesis\SIM_DB.edn  -freq 25.000  E:\GitHub\simdb-fpga\synthesis\SIM_DB.srs  -sap  E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap  -otap  E:\GitHub\simdb-fpga\synthesis\SIM_DB.tap  -omap  E:\GitHub\simdb-fpga\synthesis\SIM_DB.map  -devicelib  d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v  -sap  E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap  -ologparam  E:\GitHub\simdb-fpga\synthesis\syntmp\SIM_DB.plg  -osyn  E:\GitHub\simdb-fpga\synthesis\SIM_DB.srm  -prjdir E:\GitHub\simdb-fpga\synthesis\  -log  E:\GitHub\simdb-fpga\synthesis\synlog\SIM_DB_ProASIC3_Mapper.srr 
 rc:1 success:1
-D:\Actelprj\simdb-fpga\synthesis\scratchproject.prs|o|1402911418
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.srs|i|1402911423
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.sap|o|1398989087
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.tap|o|0
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.map|o|1402911461
+E:\GitHub\simdb-fpga\synthesis\scratchproject.prs|o|1403520742
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.srs|i|1403520743
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap|o|1403520744
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.tap|o|0
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.map|o|1403520762
 d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v|i|1286419904
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.sap|o|1398989087
-D:\Actelprj\simdb-fpga\synthesis\syntmp\SIM_DB.plg|o|1402911461
-D:\Actelprj\simdb-fpga\synthesis\SIM_DB.srm|o|1402911457
-D:\Actelprj\simdb-fpga\synthesis\synlog\SIM_DB_ProASIC3_Mapper.srr|o|1402911461
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap|o|1403520744
+E:\GitHub\simdb-fpga\synthesis\syntmp\SIM_DB.plg|o|1403520762
+E:\GitHub\simdb-fpga\synthesis\SIM_DB.srm|o|1403520761
+E:\GitHub\simdb-fpga\synthesis\synlog\SIM_DB_ProASIC3_Mapper.srr|o|1403520762
 d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\m_proasic.exe|i|1286419882

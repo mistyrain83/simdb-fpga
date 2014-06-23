@@ -5,10 +5,8 @@ Product Version E-2010.09A-1
 @N: MF258 |Gated clock conversion disabled 
 @W: MF463 |Ignoring synthesis effort setting for the design. This is not supported by the current technology.
 
-@W: MO111 :"d:\actelprj\sim_db_fpga_va\hdl\sim_db_fpga.v":50:20:50:26|tristate driver Spi_sdi on net Spi_sdi has its enable tied to GND (module sim_db) 
-@W: MO111 :"d:\actelprj\sim_db_fpga_va\hdl\sim_db_fpga.v":49:20:49:26|tristate driver Spi_clk on net Spi_clk has its enable tied to GND (module sim_db) 
-@N: BN225 |Writing default property annotation file D:\Actelprj\sim_db_fpga_va\synthesis\SIM_DB.sap.
+@N: BN225 |Writing default property annotation file E:\GitHub\simdb-fpga\synthesis\SIM_DB.sap.
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Dec 02 16:33:57 2013
+# Mon Jun 23 18:52:24 2014
 
 ###########################################################]

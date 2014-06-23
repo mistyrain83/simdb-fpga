@@ -1,5 +1,5 @@
 KEY LIBERO "9.1"
-KEY CAPTURE "9.1.5.1"
+KEY CAPTURE "9.1.0.18"
 KEY DEFAULT_IMPORT_LOC "D:\Actelprj\sim_db_fpga_va\hdl"
 KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "228e3afa-98be-496b-b1e5-009c80b44c0f"
@@ -7,7 +7,7 @@ KEY HDLTechnology "VERILOG"
 KEY VendorTechnology_Family "ProASIC3"
 KEY VendorTechnology_Die "IS6X4M1"
 KEY VendorTechnology_Package "fg256"
-KEY ProjectLocation "D:\Actelprj\simdb-fpga"
+KEY ProjectLocation "E:\GitHub\simdb-fpga"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
 KEY ActiveRoot "sim_db::work"
@@ -18,7 +18,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\constraint\sim_db_io.pdc,pdc"
 STATE="utd"
-TIME="1400252067"
+TIME="1403514826"
 SIZE="15832"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -26,48 +26,48 @@ END_USE_CONSTRAINT
 USE_FOR_ANY_TOOL="FALSE"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
-STATE="ood"
-TIME="1400558409"
+STATE="utd"
+TIME="1403514826"
 SIZE="5950976"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
-STATE="ood"
-TIME="1400558409"
-SIZE="213504"
+STATE="utd"
+TIME="1403514826"
+SIZE="216064"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
 STATE="utd"
-TIME="1400563088"
-SIZE="1903"
+TIME="1403514826"
+SIZE="1915"
 ENDFILE
 VALUE "<project>\hdl\freq.v,hdl"
 STATE="utd"
-TIME="1400558409"
+TIME="1403514826"
 SIZE="9374"
 ENDFILE
 VALUE "<project>\hdl\freq_dop.v,hdl"
 STATE="utd"
-TIME="1402912770"
+TIME="1403514826"
 SIZE="3061"
 ENDFILE
 VALUE "<project>\hdl\led.v,hdl"
 STATE="utd"
-TIME="1400252068"
-SIZE="1030"
+TIME="1403520584"
+SIZE="1066"
 ENDFILE
 VALUE "<project>\hdl\sim_db_fpga.v,hdl"
 STATE="utd"
-TIME="1402911395"
-SIZE="38950"
+TIME="1403520471"
+SIZE="39537"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
-STATE="ood"
-TIME="1400558409"
-SIZE="3668635"
+STATE="utd"
+TIME="1403514826"
+SIZE="3658559"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1400552641"
+STATE="utd"
+TIME="1403514826"
 SIZE="379"
 ENDFILE
 ENDLIST
@@ -81,6 +81,9 @@ VALUE "<project>\constraint\sim_db_io.pdc,pdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\SIM_DB.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\SIM_DB.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -160,7 +163,7 @@ EndProfile
 NAME="ModelSim AE"
 FUNCTION="Simulation"
 TOOL="ModelSim"
-LOCATION="modelsim.exe"
+LOCATION="d:\Microsemi\Libero_v9.1\Model\win32acoem\modelsim.exe"
 PARAM=""
 BATCH=0
 EndProfile
@@ -182,6 +185,9 @@ ENDLIST
 LIST ProjectState5.1
 LIST "sim_db::work"
 LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\SIM_DB.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\SIM_DB.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -221,5 +227,5 @@ LIST OpenedFileList
 DESIGNFLOW:
 FILE:<project>\hdl\sim_db_fpga.v,hdl
 FILE:<project>\hdl\freq_dop.v,hdl
-ACTIVE_VIEW:1
+ACTIVE_VIEW:0
 ENDLIST
