@@ -1,7 +1,11 @@
 simdb-fpga
 ===========
 
-sim_db board fpga project, running on Actel A3P400 256pin.
+sim_db board fpga project, running on Actel A3P400 256 FBGA
+
+V2.1.3 Version: 0xB626; hard reset; NOT verified.
+1. add spi select feature.
+2. add current tachometer.
 
 V2.1.2 Version: 0xB616; hard reset; verified.
 1. fix pwm signal delay problem.

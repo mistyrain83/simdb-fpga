@@ -9,7 +9,7 @@ Imported the files:
    E:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc
    E:\GitHub\simdb-fpga\constraint\sim_db_io.pdc
 
-The Import command succeeded ( 00:00:06 )
+The Import command succeeded ( 00:00:10 )
 Info: The design E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb was last modified by software
       version 9.1.0.18.
 Opened an existing Libero design E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
@@ -22,6 +22,11 @@ Opened an existing Libero design E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
 The Execute Script command succeeded ( 00:00:00 )
+Warning: The following files already exist:
+         
+         E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
+         
+         Do you want to replace the files? [YES]
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -91,7 +96,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   7612  Total:   9216   (82.60%)
+    CORE                       Used:   7609  Total:   9216   (82.56%)
     IO (W/ clocks)             Used:     93  Total:    178   (52.25%)
     Differential IO            Used:      0  Total:     38   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -116,7 +121,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 5790         | 5790
+    COMB    | 5787         | 5787
     SEQ     | 1822         | 1822
 
 I/O Function:
@@ -224,7 +229,7 @@ SDC Import: Begin processing constraints...
 SDC Import: End processing constraints
 
 
-The Compile command succeeded ( 00:00:05 )
+The Compile command succeeded ( 00:00:09 )
 ***** Layout Variables *********************************************
 
 Mode: TIMING_DRIVEN
@@ -246,16 +251,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Jun 23 18:57:20 2014
+Timing-driven Placer Started: Thu Jun 26 12:24:30 2014
 
-Placer Finished: Mon Jun 23 18:58:49 2014
-Total Placer CPU Time:     00:01:29
+Placer Finished: Thu Jun 26 12:25:56 2014
+Total Placer CPU Time:     00:01:26
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: SIM_DB                          Started: Mon Jun 23 18:58:55 2014
+Design: SIM_DB                          Started: Thu Jun 26 12:26:04 2014
 
  
 Iterative improvement...
@@ -263,8 +268,8 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: SIM_DB                          
-Finished: Mon Jun 23 18:59:32 2014
-Total CPU Time:     00:00:36            Total Elapsed Time: 00:00:37
+Finished: Thu Jun 26 12:26:38 2014
+Total CPU Time:     00:00:34            Total Elapsed Time: 00:00:34
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -272,19 +277,14 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:02:27 )
-Warning: The following files already exist:
-         
-         E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
-         
-         Do you want to replace the files? [YES]
+The Layout command succeeded ( 00:02:24 )
 
-The Export-map command succeeded ( 00:00:09 )
+The Export-map command succeeded ( 00:00:08 )
 Warning: Overwriting the existing file: E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb.
 Wrote to the file: E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
-CHECKSUM: 193B
+CHECKSUM: FD86
 
-The Generate programming file command succeeded ( 00:00:11 )
+The Generate programming file command succeeded ( 00:02:44 )
 Design saved to file E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
 Design closed.
 

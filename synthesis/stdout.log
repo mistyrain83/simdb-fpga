@@ -1,7 +1,7 @@
 
 Starting:    d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\bin\mbin\synplify.exe
 Install:     d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1
-Date:        Mon Jun 23 18:50:55 2014
+Date:        Thu Jun 26 12:21:45 2014
 Version:     E-2010.09A-1
 
 Arguments:   -product synplify_pro sim_db_syn.prj
@@ -16,7 +16,10 @@ License Feature: actel_oem
 
 "maxfan_hard3" is unrecognized option for current device
 
-Running compile on sim_db_syn:synthesis
+Running synthesis on sim_db_syn:synthesis
+
+log file: "E:\GitHub\simdb-fpga\synthesis\SIM_DB.srr"
+
 
 
 Running HDL Compiler...
@@ -27,35 +30,12 @@ Return Code: 1
 Run Time:00:00:01
 
 
-Running property_annotator...
-
-
-property_annotator Completed
-Return Code: 0
-Run Time:00:00:02
-
-Running synthesis on sim_db_syn:synthesis
-
-log file: "E:\GitHub\simdb-fpga\synthesis\SIM_DB.srr"
-
-
-
-Running HDL Compiler...
-
-
-Compiler Completed
-Return Code: 0
-Run Time:00:00:01
-
-
 Running ProASIC3 Mapper...
 
 
 ProASIC3 Mapper Completed with warnings
 Return Code: 1
-Run Time:00:00:09
-
-Opening object source file e:\github\simdb-fpga\synthesis\sim_db.srr
+Run Time:00:00:10
 
 exit status=0
 

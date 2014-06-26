@@ -27,18 +27,18 @@ USE_FOR_ANY_TOOL="FALSE"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
 STATE="utd"
-TIME="1403514826"
-SIZE="5950976"
+TIME="1403521249"
+SIZE="3491328"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
 STATE="utd"
-TIME="1403514826"
+TIME="1403521221"
 SIZE="216064"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
 STATE="utd"
-TIME="1403514826"
-SIZE="1915"
+TIME="1403520605"
+SIZE="1909"
 ENDFILE
 VALUE "<project>\hdl\freq.v,hdl"
 STATE="utd"
@@ -57,17 +57,17 @@ SIZE="1066"
 ENDFILE
 VALUE "<project>\hdl\sim_db_fpga.v,hdl"
 STATE="utd"
-TIME="1403520471"
+TIME="1403756196"
 SIZE="39537"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
 STATE="utd"
-TIME="1403514826"
-SIZE="3658559"
+TIME="1403520762"
+SIZE="3667159"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1403514826"
+TIME="1403520762"
 SIZE="379"
 ENDFILE
 ENDLIST
@@ -225,7 +225,5 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 DESIGNFLOW:
-FILE:<project>\hdl\sim_db_fpga.v,hdl
-FILE:<project>\hdl\freq_dop.v,hdl
 ACTIVE_VIEW:0
 ENDLIST
