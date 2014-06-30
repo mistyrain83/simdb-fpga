@@ -3,7 +3,7 @@
 
 # Version: 9.1 SP5 9.1.5.1
 # Family: ProASIC3 , Die: A3P400 , Package: 256 FBGA
-# Date generated: Tue May 13 14:11:34 2014 
+# Date generated: Mon Jun 30 16:01:24 2014 
 
 
 # 
@@ -558,12 +558,19 @@ set_io O_spi_cl_cs_n   \
 set_io O_ti_led        \
     -pinname B2        \
     -fixed yes         \
+    -OUT_DRIVE 12      \
     -DIRECTION Output
 
 
 set_io O_ti_lock       \
     -pinname P10       \
     -fixed yes         \
+    -iostd LVTTL       \
+    -OUT_DRIVE 16      \
+    -OUT_LOAD 35       \
+    -RES_PULL None     \
+    -SKEW Off          \
+    -SLEW High         \
     -DIRECTION Output
 
 
@@ -623,7 +630,7 @@ set_io clock          \
 # set_io O_cspd1_latch -pinname F16 -fixed yes -DIRECTION Output 
 # set_io {O_cspd_ch[0]} -pinname B13 -fixed yes -DIRECTION Output 
 # set_io {O_cspd_ch[1]} -pinname A13 -fixed yes -DIRECTION Output 
-# set_io O_dop_pwm -pinname A15 -fixed yes -DIRECTION Output 
+# set_io O_dop_pwm -pinname B12 -fixed yes -DIRECTION Output 
 # set_io {O_io[0]} -pinname R3 -fixed yes -DIRECTION Output 
 # set_io {O_io[1]} -pinname R2 -fixed yes -DIRECTION Output 
 # set_io {O_io[2]} -pinname R1 -fixed yes -DIRECTION Output 
@@ -658,7 +665,7 @@ set_io clock          \
 # set_io O_mvb_lcs_n -pinname D1 -fixed yes -DIRECTION Output 
 # set_io O_mvb_rst_n -pinname E1 -fixed yes -DIRECTION Output 
 # set_io O_out1 -pinname A14 -fixed yes -DIRECTION Output 
-# set_io O_out2 -pinname A10 -fixed yes -DIRECTION Output 
+# set_io O_out2 -pinname A15 -fixed yes -DIRECTION Output 
 # set_io O_rs485_de -pinname T3 -fixed yes -DIRECTION Output 
 # set_io {O_spd1_ch[0]} -pinname A12 -fixed yes -DIRECTION Output 
 # set_io {O_spd1_ch[1]} -pinname B11 -fixed yes -DIRECTION Output 
@@ -667,8 +674,8 @@ set_io clock          \
 # set_io {O_spd1_ch[4]} -pinname B9 -fixed yes -DIRECTION Output 
 # set_io {O_spd1_ch[5]} -pinname A9 -fixed yes -DIRECTION Output 
 # set_io {O_spd2_ch[0]} -pinname B8 -fixed yes -DIRECTION Output 
-# set_io {O_spd2_ch[1]} -pinname B7 -fixed yes -DIRECTION Output 
-# set_io {O_spd2_ch[2]} -pinname A8 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[1]} -pinname A8 -fixed yes -DIRECTION Output 
+# set_io {O_spd2_ch[2]} -pinname B7 -fixed yes -DIRECTION Output 
 # set_io {O_spd2_ch[3]} -pinname A7 -fixed yes -DIRECTION Output 
 # set_io {O_spd2_ch[4]} -pinname B6 -fixed yes -DIRECTION Output 
 # set_io {O_spd2_ch[5]} -pinname A6 -fixed yes -DIRECTION Output 

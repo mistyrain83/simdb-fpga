@@ -1,8 +1,8 @@
 #add_file options
-add_file -verilog "E:/GitHub/simdb-fpga/hdl/freq_dop.v"
-add_file -verilog "E:/GitHub/simdb-fpga/hdl/freq.v"
-add_file -verilog "E:/GitHub/simdb-fpga/hdl/led.v"
-add_file -verilog "E:/GitHub/simdb-fpga/hdl/sim_db_fpga.v"
+add_file -verilog "D:/GitHub/simdb-fpga/hdl/freq_dop.v"
+add_file -verilog "D:/GitHub/simdb-fpga/hdl/freq.v"
+add_file -verilog "D:/GitHub/simdb-fpga/hdl/led.v"
+add_file -verilog "D:/GitHub/simdb-fpga/hdl/sim_db_fpga.v"
 set_option -top_module sim_db
 
 #device options
@@ -53,4 +53,4 @@ set_option -write_apr_constraint 1
 
 #set result format/file last
 impl -active "synthesis"
-project -result_file "E:/GitHub/simdb-fpga/synthesis/SIM_DB.edn"
+project -result_file "D:/GitHub/simdb-fpga/synthesis/SIM_DB.edn"

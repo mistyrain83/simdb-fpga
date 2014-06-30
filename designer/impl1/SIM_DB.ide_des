@@ -8,15 +8,15 @@ KEY IDE_DES_KEEP_TIME_CONSTR "TRUE"
 KEY IDE_DES_LAYOUT_DONE "TRUE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb"
+KEY IDE_DES_ADB_PATH "D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb"
 LIST SOURCE_FILES
-VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB.edn;edn"
-VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;sdc"
-VALUE "E:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;pdc"
+VALUE "D:\GitHub\simdb-fpga\synthesis\SIM_DB.edn;edn"
+VALUE "D:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;sdc"
+VALUE "D:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
-VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;Used"
-VALUE "E:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;Used"
+VALUE "D:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;Used"
+VALUE "D:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;Used"
 ENDLIST
 LIST VCD_FILES
 ENDLIST

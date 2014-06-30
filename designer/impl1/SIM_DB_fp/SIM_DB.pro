@@ -1,12 +1,12 @@
 <project name="SIM_DB" version="1.1">
     <ProjectDirectory>
-        E:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp
+        D:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
     </View>
     <LogFile>
-        E:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp\SIM_DB.log
+        D:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp\SIM_DB.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -59,7 +59,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                E:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
+                D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
             </filename>
             <local>
                 projectData\SIM_DB.pdb
