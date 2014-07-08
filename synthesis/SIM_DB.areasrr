@@ -3,48 +3,47 @@ Report for cell sim_db.verilog
                                           Cell usage:
                                cell       count     area    count*area
                                AND2         1       1.0        1.0
-                               AO1B         1       1.0        1.0
-                               AO1D         1       1.0        1.0
-                               AOI1         1       1.0        1.0
-                              AOI1B         2       1.0        2.0
+                                AO1         1       1.0        1.0
+                               AO1A         2       1.0        2.0
+                               AO1C         1       1.0        1.0
+                               AOI1         2       1.0        2.0
                               BIBUF        16       0.0        0.0
-                               BUFF         4       1.0        4.0
+                               BUFF         5       1.0        5.0
                              CLKINT         6       0.0        0.0
                                DFN1         6       1.0        6.0
                              DFN1C0         6       1.0        6.0
                            DFN1E1C0       775       1.0      775.0
                                 GND         1       0.0        0.0
                               INBUF        19       0.0        0.0
-                                INV         7       1.0        7.0
-                                MX2       765       1.0      765.0
-                               NOR2        24       1.0       24.0
-                              NOR2A        34       1.0       34.0
-                              NOR2B        48       1.0       48.0
-                               NOR3         1       1.0        1.0
-                              NOR3A         9       1.0        9.0
-                              NOR3B        14       1.0       14.0
-                              NOR3C        38       1.0       38.0
-                               OA1C         2       1.0        2.0
-                               OAI1         1       1.0        1.0
-                                OR2         3       1.0        3.0
-                               OR2A         7       1.0        7.0
-                               OR2B         8       1.0        8.0
-                                OR3         1       1.0        1.0
-                               OR3A         2       1.0        2.0
-                               OR3B         2       1.0        2.0
+                                INV         6       1.0        6.0
+                                MX2       749       1.0      749.0
+                              NAND2         1       1.0        1.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        14       1.0       14.0
+                              NOR2B        96       1.0       96.0
+                               NOR3        28       1.0       28.0
+                              NOR3A        25       1.0       25.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                                OR2        23       1.0       23.0
+                               OR2A        51       1.0       51.0
+                               OR2B         4       1.0        4.0
+                                OR3         3       1.0        3.0
+                               OR3A         7       1.0        7.0
+                               OR3B         3       1.0        3.0
                                OR3C         1       1.0        1.0
                              OUTBUF        58       0.0        0.0
                                 VCC         1       0.0        0.0
-                           freq_dop         1     178.0      178.0
-                  freq_module_freq1         1     989.0      989.0
-                freq_module_freq1_1         1     988.0      988.0
-                freq_module_freq1_2         1     987.0      987.0
-                freq_module_freq1_3         1     989.0      989.0
-                freq_module_freq1_4         1     989.0      989.0
-                freq_module_freq1_5         1     989.0      989.0
+                           freq_dop         1     179.0      179.0
+                  freq_module_freq1         1    1018.0     1018.0
+                freq_module_freq1_1         1    1021.0     1021.0
+                freq_module_freq1_2         1    1022.0     1022.0
+                freq_module_freq1_3         1    1020.0     1020.0
+                freq_module_freq1_4         1    1021.0     1021.0
+                freq_module_freq1_5         1    1019.0     1019.0
                                 led         1     113.0      113.0
                             
-                         TOTAL           1873               7986.0
+                         TOTAL           1927               8231.0
 ----------------------------------------------------------------------
 Report for cell led.netlist
      Instance path:  module_led
@@ -73,351 +72,338 @@ Report for cell freq_module_freq1_5.netlist
      Instance path:  module_freq6
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
                                AO1A         1       1.0        1.0
-                               AO1B         4       1.0        4.0
-                               AO1C        15       1.0       15.0
-                               AO1D         2       1.0        2.0
-                               AOI1         1       1.0        1.0
+                               AO1B         1       1.0        1.0
+                               AO1C        34       1.0       34.0
+                               AO1D         1       1.0        1.0
                               AOI1A        21       1.0       21.0
                               AOI1B         4       1.0        4.0
-                                AX1         4       1.0        4.0
-                               AX1A         2       1.0        2.0
-                               AX1C         1       1.0        1.0
-                             DFN1C0        79       1.0       79.0
+                                AX1         3       1.0        3.0
+                               AX1A         3       1.0        3.0
+                               AX1E         1       1.0        1.0
+                             DFN1C0        80       1.0       80.0
                            DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
                            DFN1E1C0        58       1.0       58.0
-                             DFN1P0         2       1.0        2.0
+                           DFN1E1P0        16       1.0       16.0
+                             DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
                                 MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        86       1.0       86.0
-                              NOR2A        51       1.0       51.0
-                              NOR2B        47       1.0       47.0
+                               MX2A         2       1.0        2.0
+                               MX2C        50       1.0       50.0
+                               NOR2        57       1.0       57.0
+                              NOR2A        78       1.0       78.0
+                              NOR2B        50       1.0       50.0
                                NOR3         4       1.0        4.0
-                              NOR3A        22       1.0       22.0
-                              NOR3B         3       1.0        3.0
-                              NOR3C        42       1.0       42.0
+                              NOR3A        20       1.0       20.0
+                              NOR3B         4       1.0        4.0
+                              NOR3C        34       1.0       34.0
                                 OA1         6       1.0        6.0
-                               OA1A         9       1.0        9.0
-                               OA1B         1       1.0        1.0
-                               OA1C         1       1.0        1.0
-                               OAI1        16       1.0       16.0
-                                OR2         2       1.0        2.0
-                               OR2A        46       1.0       46.0
-                               OR2B         5       1.0        5.0
+                               OA1A        10       1.0       10.0
+                               OAI1         1       1.0        1.0
+                                OR2         1       1.0        1.0
+                               OR2A        49       1.0       49.0
+                               OR2B         7       1.0        7.0
                                OR3A         3       1.0        3.0
                                OR3B         6       1.0        6.0
                                OR3C         5       1.0        5.0
                                 VCC         1       0.0        0.0
                                XA1A        19       1.0       19.0
-                               XA1B         9       1.0        9.0
-                               XA1C         8       1.0        8.0
-                              XNOR2       101       1.0      101.0
-                               XOR2        93       1.0       93.0
+                               XA1B         5       1.0        5.0
+                               XA1C        12       1.0       12.0
+                              XNOR2       102       1.0      102.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            991                989.0
+                         TOTAL           1021               1019.0
 ----------------------------------------------------------------------
 Report for cell freq_module_freq1_4.netlist
   Original Cell name freq_module_freq1
      Instance path:  module_freq5
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
-                               AO1A         1       1.0        1.0
-                               AO1B         4       1.0        4.0
-                               AO1C        15       1.0       15.0
-                               AO1D         2       1.0        2.0
-                               AOI1         1       1.0        1.0
+                               AO1A         2       1.0        2.0
+                               AO1B         2       1.0        2.0
+                               AO1C        34       1.0       34.0
                               AOI1A        21       1.0       21.0
-                              AOI1B         4       1.0        4.0
-                                AX1         4       1.0        4.0
-                               AX1A         1       1.0        1.0
-                               AX1C         1       1.0        1.0
-                             DFN1C0        79       1.0       79.0
+                              AOI1B         2       1.0        2.0
+                                AX1         3       1.0        3.0
+                               AX1A         3       1.0        3.0
+                               AX1E         1       1.0        1.0
+                             DFN1C0        80       1.0       80.0
                            DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
                            DFN1E1C0        58       1.0       58.0
-                             DFN1P0         2       1.0        2.0
+                           DFN1E1P0        16       1.0       16.0
+                             DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
-                                MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        81       1.0       81.0
-                              NOR2A        52       1.0       52.0
-                              NOR2B        51       1.0       51.0
-                               NOR3         4       1.0        4.0
-                              NOR3A        26       1.0       26.0
-                              NOR3B         3       1.0        3.0
-                              NOR3C        38       1.0       38.0
-                                OA1         6       1.0        6.0
-                               OA1A         9       1.0        9.0
-                               OA1B         1       1.0        1.0
-                               OA1C         1       1.0        1.0
-                               OAI1        16       1.0       16.0
-                                OR2         2       1.0        2.0
-                               OR2A        46       1.0       46.0
-                               OR2B         6       1.0        6.0
-                               OR3A         3       1.0        3.0
-                               OR3B         5       1.0        5.0
-                               OR3C         5       1.0        5.0
+                                MX2         3       1.0        3.0
+                               MX2A         1       1.0        1.0
+                               MX2C        50       1.0       50.0
+                               NOR2        59       1.0       59.0
+                              NOR2A        77       1.0       77.0
+                              NOR2B        47       1.0       47.0
+                               NOR3         3       1.0        3.0
+                              NOR3A        21       1.0       21.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        34       1.0       34.0
+                                OA1         7       1.0        7.0
+                               OA1A        11       1.0       11.0
+                                OR2         1       1.0        1.0
+                               OR2A        51       1.0       51.0
+                               OR2B         7       1.0        7.0
+                               OR3A         2       1.0        2.0
+                               OR3B         8       1.0        8.0
+                               OR3C         6       1.0        6.0
                                 VCC         1       0.0        0.0
                                XA1A        19       1.0       19.0
-                               XA1B        10       1.0       10.0
-                               XA1C         8       1.0        8.0
-                              XNOR2       101       1.0      101.0
-                               XOR2        93       1.0       93.0
+                               XA1B         4       1.0        4.0
+                               XA1C        12       1.0       12.0
+                              XNOR2       102       1.0      102.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            991                989.0
+                         TOTAL           1023               1021.0
 ----------------------------------------------------------------------
 Report for cell freq_module_freq1_3.netlist
   Original Cell name freq_module_freq1
      Instance path:  module_freq4
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
-                               AO1A         1       1.0        1.0
-                               AO1B         4       1.0        4.0
-                               AO1C        15       1.0       15.0
-                               AO1D         2       1.0        2.0
+                               AO1A         2       1.0        2.0
+                               AO1B         2       1.0        2.0
+                               AO1C        34       1.0       34.0
+                               AO1D         1       1.0        1.0
                               AOI1A        21       1.0       21.0
-                              AOI1B         5       1.0        5.0
-                                AX1         4       1.0        4.0
-                               AX1A         1       1.0        1.0
-                               AX1C         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         3       1.0        3.0
+                               AX1A         2       1.0        2.0
+                               AX1E         1       1.0        1.0
                              DFN1C0        80       1.0       80.0
                            DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
                            DFN1E1C0        58       1.0       58.0
+                           DFN1E1P0        16       1.0       16.0
                              DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
-                                MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        84       1.0       84.0
-                              NOR2A        52       1.0       52.0
-                              NOR2B        50       1.0       50.0
+                                MX2         3       1.0        3.0
+                               MX2A         1       1.0        1.0
+                               MX2C        50       1.0       50.0
+                               NOR2        56       1.0       56.0
+                              NOR2A        78       1.0       78.0
+                              NOR2B        48       1.0       48.0
                                NOR3         3       1.0        3.0
                               NOR3A        22       1.0       22.0
-                              NOR3B         3       1.0        3.0
-                              NOR3C        41       1.0       41.0
-                                OA1         5       1.0        5.0
-                               OA1A         9       1.0        9.0
-                               OA1B         1       1.0        1.0
-                               OA1C         1       1.0        1.0
-                                OR2         3       1.0        3.0
-                               OR2A        45       1.0       45.0
-                               OR2B        22       1.0       22.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        34       1.0       34.0
+                                OA1         7       1.0        7.0
+                               OA1A        11       1.0       11.0
+                               OR2A        52       1.0       52.0
+                               OR2B         9       1.0        9.0
                                OR3A         3       1.0        3.0
-                               OR3B         5       1.0        5.0
-                               OR3C         5       1.0        5.0
+                               OR3B         6       1.0        6.0
+                               OR3C         4       1.0        4.0
                                 VCC         1       0.0        0.0
                                XA1A        19       1.0       19.0
-                               XA1B        11       1.0       11.0
-                               XA1C         8       1.0        8.0
-                              XNOR2       101       1.0      101.0
-                               XOR2        93       1.0       93.0
+                               XA1B         5       1.0        5.0
+                               XA1C        12       1.0       12.0
+                              XNOR2       102       1.0      102.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            991                989.0
+                         TOTAL           1022               1020.0
 ----------------------------------------------------------------------
 Report for cell freq_module_freq1_2.netlist
   Original Cell name freq_module_freq1
      Instance path:  module_freq3
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
-                               AO1A         2       1.0        2.0
-                               AO1B         4       1.0        4.0
-                               AO1C        15       1.0       15.0
-                               AO1D         1       1.0        1.0
+                               AO1A         3       1.0        3.0
+                               AO1B         2       1.0        2.0
+                               AO1C        34       1.0       34.0
                                AOI1         1       1.0        1.0
                               AOI1A        21       1.0       21.0
-                              AOI1B         3       1.0        3.0
-                                AX1         4       1.0        4.0
-                               AX1A         1       1.0        1.0
-                               AX1C         1       1.0        1.0
-                               AXO3         1       1.0        1.0
-                             DFN1C0        81       1.0       81.0
+                              AOI1B         1       1.0        1.0
+                                AX1         3       1.0        3.0
+                               AX1A         3       1.0        3.0
+                               AX1E         1       1.0        1.0
+                             DFN1C0        80       1.0       80.0
                            DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
-                           DFN1E1C0        57       1.0       57.0
+                           DFN1E1C0        58       1.0       58.0
+                           DFN1E1P0        16       1.0       16.0
                              DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
-                                MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        85       1.0       85.0
-                              NOR2A        48       1.0       48.0
-                              NOR2B        49       1.0       49.0
+                                MX2         3       1.0        3.0
+                               MX2A         1       1.0        1.0
+                               MX2C        50       1.0       50.0
+                               NOR2        59       1.0       59.0
+                              NOR2A        76       1.0       76.0
+                              NOR2B        47       1.0       47.0
                                NOR3         3       1.0        3.0
                               NOR3A        21       1.0       21.0
-                              NOR3B         5       1.0        5.0
-                              NOR3C        42       1.0       42.0
-                                OA1         6       1.0        6.0
-                               OA1A         9       1.0        9.0
-                               OA1B         1       1.0        1.0
-                               OAI1        16       1.0       16.0
-                                OR2         2       1.0        2.0
-                               OR2A        43       1.0       43.0
-                               OR2B        10       1.0       10.0
-                                OR3         1       1.0        1.0
-                               OR3A         1       1.0        1.0
-                               OR3B         5       1.0        5.0
+                              NOR3B         6       1.0        6.0
+                              NOR3C        34       1.0       34.0
+                                OA1         7       1.0        7.0
+                               OA1A        10       1.0       10.0
+                                OR2         1       1.0        1.0
+                               OR2A        53       1.0       53.0
+                               OR2B         6       1.0        6.0
+                               OR3A         2       1.0        2.0
+                               OR3B        10       1.0       10.0
                                OR3C         5       1.0        5.0
                                 VCC         1       0.0        0.0
                                XA1A        19       1.0       19.0
-                               XA1B        11       1.0       11.0
-                               XA1C         8       1.0        8.0
-                              XNOR2       101       1.0      101.0
-                               XOR2        93       1.0       93.0
+                               XA1B         3       1.0        3.0
+                               XA1C        12       1.0       12.0
+                              XNOR2       102       1.0      102.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            989                987.0
+                         TOTAL           1024               1022.0
 ----------------------------------------------------------------------
 Report for cell freq_module_freq1_1.netlist
   Original Cell name freq_module_freq1
      Instance path:  module_freq2
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
-                               AO1A         3       1.0        3.0
+                               AO1A         1       1.0        1.0
                                AO1B         1       1.0        1.0
-                               AO1C        15       1.0       15.0
+                               AO1C        18       1.0       18.0
+                               AO1D         1       1.0        1.0
                               AOI1A        21       1.0       21.0
-                              AOI1B         4       1.0        4.0
-                               AX1A         2       1.0        2.0
-                               AX1C         1       1.0        1.0
-                             DFN1C0        79       1.0       79.0
+                              AOI1B         3       1.0        3.0
+                                AX1         3       1.0        3.0
+                               AX1A         3       1.0        3.0
+                               AX1E         1       1.0        1.0
+                             DFN1C0        80       1.0       80.0
                            DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
                            DFN1E1C0        58       1.0       58.0
-                             DFN1P0         2       1.0        2.0
+                           DFN1E1P0        16       1.0       16.0
+                             DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
                                 MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        83       1.0       83.0
-                              NOR2A        49       1.0       49.0
-                              NOR2B        57       1.0       57.0
-                               NOR3         4       1.0        4.0
-                              NOR3A        19       1.0       19.0
-                              NOR3B         5       1.0        5.0
-                              NOR3C        38       1.0       38.0
+                               MX2A         2       1.0        2.0
+                               MX2C        50       1.0       50.0
+                               NOR2        57       1.0       57.0
+                              NOR2A        80       1.0       80.0
+                              NOR2B        52       1.0       52.0
+                               NOR3         3       1.0        3.0
+                              NOR3A        21       1.0       21.0
+                              NOR3B         4       1.0        4.0
+                              NOR3C        33       1.0       33.0
                                 OA1         6       1.0        6.0
                                OA1A         9       1.0        9.0
-                               OA1C         1       1.0        1.0
-                               OAI1        16       1.0       16.0
-                                OR2         2       1.0        2.0
-                               OR2A        45       1.0       45.0
-                               OR2B        10       1.0       10.0
-                               OR3A         5       1.0        5.0
-                               OR3B         3       1.0        3.0
+                               OAI1         1       1.0        1.0
+                                OR2         1       1.0        1.0
+                               OR2A        49       1.0       49.0
+                               OR2B        23       1.0       23.0
+                               OR3A         2       1.0        2.0
+                               OR3B         7       1.0        7.0
                                OR3C         6       1.0        6.0
                                 VCC         1       0.0        0.0
-                               XA1A        18       1.0       18.0
-                               XA1B        13       1.0       13.0
-                               XA1C        13       1.0       13.0
+                               XA1A        19       1.0       19.0
+                               XA1B         5       1.0        5.0
+                               XA1C        12       1.0       12.0
                               XNOR2       102       1.0      102.0
-                               XOR2        88       1.0       88.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            990                988.0
+                         TOTAL           1023               1021.0
 ----------------------------------------------------------------------
 Report for cell freq_module_freq1.netlist
   Original Cell name freq
      Instance path:  module_freq1
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        64       1.0       64.0
+                               AND2        67       1.0       67.0
                               AND2A        12       1.0       12.0
-                               AND3        22       1.0       22.0
+                               AND3        39       1.0       39.0
                               AND3A         1       1.0        1.0
                                 AO1        38       1.0       38.0
                                AO1A         2       1.0        2.0
-                               AO1B         4       1.0        4.0
-                               AO1C        15       1.0       15.0
-                               AO1D         2       1.0        2.0
-                               AOI1         2       1.0        2.0
+                               AO1B         2       1.0        2.0
+                               AO1C        34       1.0       34.0
                               AOI1A        21       1.0       21.0
-                              AOI1B         3       1.0        3.0
-                                AX1         4       1.0        4.0
-                               AX1A         1       1.0        1.0
-                               AX1C         1       1.0        1.0
-                             DFN1C0        80       1.0       80.0
-                           DFN1E0C0         3       1.0        3.0
-                           DFN1E0P0        16       1.0       16.0
+                              AOI1B         2       1.0        2.0
+                                AX1         3       1.0        3.0
+                               AX1A         3       1.0        3.0
+                               AX1E         1       1.0        1.0
+                               AXO3         1       1.0        1.0
+                             DFN1C0        81       1.0       81.0
+                           DFN1E0C0         2       1.0        2.0
                            DFN1E1C0        58       1.0       58.0
+                           DFN1E1P0        16       1.0       16.0
                              DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
-                                MX2         2       1.0        2.0
-                               MX2C        52       1.0       52.0
-                               NOR2        85       1.0       85.0
-                              NOR2A        49       1.0       49.0
-                              NOR2B        48       1.0       48.0
+                                MX2         3       1.0        3.0
+                               MX2A         1       1.0        1.0
+                               MX2C        50       1.0       50.0
+                               NOR2        53       1.0       53.0
+                              NOR2A        77       1.0       77.0
+                              NOR2B        51       1.0       51.0
                                NOR3         4       1.0        4.0
-                              NOR3A        22       1.0       22.0
-                              NOR3B         4       1.0        4.0
-                              NOR3C        42       1.0       42.0
-                                OA1         5       1.0        5.0
-                               OA1A         9       1.0        9.0
-                               OA1C         1       1.0        1.0
-                                OR2         3       1.0        3.0
-                               OR2A        45       1.0       45.0
-                               OR2B        24       1.0       24.0
-                                OR3         1       1.0        1.0
+                              NOR3A        25       1.0       25.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        29       1.0       29.0
+                                OA1         7       1.0        7.0
+                               OA1A        11       1.0       11.0
+                               OR2A        49       1.0       49.0
+                               OR2B         7       1.0        7.0
                                OR3A         2       1.0        2.0
-                               OR3B         5       1.0        5.0
-                               OR3C         5       1.0        5.0
+                               OR3B         8       1.0        8.0
+                               OR3C         7       1.0        7.0
                                 VCC         1       0.0        0.0
                                XA1A        19       1.0       19.0
-                               XA1B        10       1.0       10.0
-                               XA1C         8       1.0        8.0
-                              XNOR2       101       1.0      101.0
-                               XOR2        93       1.0       93.0
+                               XA1B         5       1.0        5.0
+                               XA1C        11       1.0       11.0
+                              XNOR2       102       1.0      102.0
+                               XOR2       108       1.0      108.0
                             
-                         TOTAL            991                989.0
+                         TOTAL           1020               1018.0
 ----------------------------------------------------------------------
 Report for cell freq_dop.netlist
      Instance path:  module_freq_dop
                                           Cell usage:
                                cell       count     area    count*area
+                                AO1         1       1.0        1.0
                                AO1A         2       1.0        2.0
                                AOI1         1       1.0        1.0
-                                AX1         1       1.0        1.0
-                               AX1E         2       1.0        2.0
+                               AX1A         1       1.0        1.0
+                               AX1E         1       1.0        1.0
                              DFN1C0        34       1.0       34.0
                            DFN1E1C0        28       1.0       28.0
                                 GND         1       0.0        0.0
-                               NOR2        14       1.0       14.0
-                              NOR2A         3       1.0        3.0
-                              NOR2B        10       1.0       10.0
-                               NOR3         2       1.0        2.0
-                              NOR3A         5       1.0        5.0
-                              NOR3B         2       1.0        2.0
-                              NOR3C        14       1.0       14.0
-                               OA1C         1       1.0        1.0
-                               OR2A         4       1.0        4.0
+                               NOR2        12       1.0       12.0
+                              NOR2A         5       1.0        5.0
+                              NOR2B        14       1.0       14.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         6       1.0        6.0
+                              NOR3B         1       1.0        1.0
+                              NOR3C        12       1.0       12.0
+                               OR2A         3       1.0        3.0
                                OR2B         4       1.0        4.0
-                               OR3C         2       1.0        2.0
+                               OR3C         3       1.0        3.0
                                 VCC         1       0.0        0.0
                                XA1A        10       1.0       10.0
-                               XA1B        16       1.0       16.0
-                               XA1C         7       1.0        7.0
+                               XA1B        18       1.0       18.0
+                               XA1C         6       1.0        6.0
                               XNOR2        16       1.0       16.0
                             
-                         TOTAL            180                178.0
+                         TOTAL            181                179.0

@@ -19,6 +19,10 @@
  * \version :V1.2
  * \date :2014-05-17 Qixb
  * \description : fixed Pluse1,2 difference frequency.
+ *
+ * \version :V1.3
+ * \date :2014-07-08 Qixb
+ * \description : modify limited-mode pulse to (pulse + 1).
  */
 
 `timescale 1ns/100ps
@@ -193,7 +197,8 @@ module freq(
                         end
                     
 					  // in limited mode
-                      if((R_pluse_number != 0) && (R_pluse_number != 17'h1fffe))
+                      //if((R_pluse_number != 0) && (R_pluse_number != 17'h1fffe))
+					  if((R_pluse_number != 0) && (I_limited_Pluse == 1'b1))
 					    begin
                           R_pluse_number      <=    R_pluse_number - 1'b1;
 					    end
@@ -217,7 +222,7 @@ module freq(
                 
                 if (I_limited_Pluse)
                  begin
-                  R_pluse_number[16:1]      <= I_pluse_number[15:0]; 
+                  R_pluse_number[16:1]      <= I_pluse_number[15:0] + 1; 
                  end
                 else
                  begin
@@ -235,7 +240,7 @@ module freq(
                   end
                   
               end    
-             else if(R_load_flag&(cnt==0)&(R_I_freq[27:0] != 0))
+             else if(R_load_flag & (cnt==0) & (R_I_freq[27:0] != 0))
                 begin
                   if(I_freq == 0)
                     begin
@@ -245,7 +250,7 @@ module freq(
 				  // if limited pulse mode
                   if (I_limited_Pluse)
                     begin
-                       R_pluse_number[16:1]      <= I_pluse_number[15:0];
+                       R_pluse_number[16:1]      <= I_pluse_number[15:0] + 1;
                     end
                   else
                    begin

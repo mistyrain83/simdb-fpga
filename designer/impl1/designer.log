@@ -9,9 +9,9 @@ Imported the files:
    D:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc
    D:\GitHub\simdb-fpga\constraint\sim_db_io.pdc
 
-The Import command succeeded ( 00:00:20 )
+The Import command succeeded ( 00:00:18 )
 Info: The design D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb was last modified by software
-      version 9.1.0.18.
+      version 9.1.5.1.
 Opened an existing Libero design D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
 'BA_NAME' set to 'sim_db_ba'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
@@ -73,9 +73,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        377
+  - Logic combining:        409
 
-    Total macros optimized  377
+    Total macros optimized  409
 
 There were 0 error(s) and 1 warning(s) in this design.
 =====================================================================
@@ -96,7 +96,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   7609  Total:   9216   (82.56%)
+    CORE                       Used:   7822  Total:   9216   (84.87%)
     IO (W/ clocks)             Used:     93  Total:    178   (52.25%)
     Differential IO            Used:      0  Total:     38   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -121,7 +121,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 5787         | 5787
+    COMB    | 6000         | 6000
     SEQ     | 1822         | 1822
 
 I/O Function:
@@ -160,17 +160,17 @@ The following nets have been assigned to a chip global resource:
     1822    CLK_NET       Net   : W_clk
                           Driver: i_CLKINT1
                           Source: NETLIST
-    375     INT_NET       Net   : I_la_c[1]
+    310     INT_NET       Net   : I_la_c[1]
                           Driver: I_la_pad_RNIOC03[1]
                           Source: NETLIST
-    156     INT_NET       Net   : I_la_c[2]
+    268     INT_NET       Net   : I_la_c[5]
+                          Driver: I_la_pad_RNISC03[5]
+                          Source: NETLIST
+    119     INT_NET       Net   : I_la_c[2]
                           Driver: I_la_pad_RNIPC03[2]
                           Source: NETLIST
-    123     INT_NET       Net   : I_la_c[3]
+    103     INT_NET       Net   : I_la_c[3]
                           Driver: I_la_pad_RNIQC03[3]
-                          Source: NETLIST
-    102     INT_NET       Net   : I_la_c[5]
-                          Driver: I_la_pad_RNISC03[5]
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
@@ -200,7 +200,7 @@ High fanout nets in the post compile netlist:
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    68      INT_NET       Net   : I_la_c[6]
+    71      INT_NET       Net   : I_la_c[6]
                           Driver: I_la_pad[6]
     51      INT_NET       Net   : IO_ld_in[0]
                           Driver: IO_ld_pad[0]
@@ -229,7 +229,7 @@ SDC Import: Begin processing constraints...
 SDC Import: End processing constraints
 
 
-The Compile command succeeded ( 00:00:32 )
+The Compile command succeeded ( 00:00:31 )
 ***** Layout Variables *********************************************
 
 Mode: TIMING_DRIVEN
@@ -251,16 +251,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Jun 30 16:08:19 2014
+Timing-driven Placer Started: Tue Jul 08 10:21:02 2014
 
-Placer Finished: Mon Jun 30 16:15:04 2014
-Total Placer CPU Time:     00:06:45
+Placer Finished: Tue Jul 08 10:27:25 2014
+Total Placer CPU Time:     00:06:23
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: SIM_DB                          Started: Mon Jun 30 16:15:37 2014
+Design: SIM_DB                          Started: Tue Jul 08 10:27:53 2014
 
  
 Iterative improvement...
@@ -268,8 +268,8 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: SIM_DB                          
-Finished: Mon Jun 30 16:17:38 2014
-Total CPU Time:     00:02:00            Total Elapsed Time: 00:02:01
+Finished: Tue Jul 08 10:30:32 2014
+Total CPU Time:     00:02:38            Total Elapsed Time: 00:02:39
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -277,14 +277,14 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:10:15 )
+The Layout command succeeded ( 00:10:25 )
 
 The Export-map command succeeded ( 00:00:38 )
 Warning: Overwriting the existing file: D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb.
 Wrote to the file: D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
-CHECKSUM: E6C6
+CHECKSUM: FDE3
 
-The Generate programming file command succeeded ( 00:11:34 )
+The Generate programming file command succeeded ( 00:11:43 )
 Design saved to file D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
 Design closed.
 

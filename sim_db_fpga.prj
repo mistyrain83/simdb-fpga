@@ -27,23 +27,23 @@ USE_FOR_ANY_TOOL="FALSE"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.adb,adb"
 STATE="utd"
-TIME="1404112635"
+TIME="1404184085"
 SIZE="5689344"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB.pdb,pdb"
 STATE="utd"
-TIME="1404112635"
-SIZE="215552"
+TIME="1404183937"
+SIZE="217088"
 ENDFILE
 VALUE "<project>\designer\impl1\SIM_DB_fp\SIM_DB.pro,pro"
 STATE="utd"
-TIME="1404112635"
+TIME="1404114747"
 SIZE="1909"
 ENDFILE
 VALUE "<project>\hdl\freq.v,hdl"
 STATE="utd"
-TIME="1403767852"
-SIZE="9374"
+TIME="1404785652"
+SIZE="9562"
 ENDFILE
 VALUE "<project>\hdl\freq_dop.v,hdl"
 STATE="utd"
@@ -57,17 +57,17 @@ SIZE="1066"
 ENDFILE
 VALUE "<project>\hdl\sim_db_fpga.v,hdl"
 STATE="utd"
-TIME="1404112635"
-SIZE="39537"
+TIME="1404785589"
+SIZE="39702"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB.edn,syn_edn"
 STATE="utd"
-TIME="1404112635"
-SIZE="3667095"
+TIME="1404182988"
+SIZE="3723737"
 ENDFILE
 VALUE "<project>\synthesis\SIM_DB_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1403767852"
+TIME="1404182987"
 SIZE="379"
 ENDFILE
 ENDLIST
@@ -225,5 +225,6 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 DESIGNFLOW:
+FILE:<project>\hdl\sim_db_fpga.v,hdl
 ACTIVE_VIEW:0
 ENDLIST

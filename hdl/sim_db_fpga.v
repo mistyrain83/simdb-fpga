@@ -37,6 +37,11 @@
 //-- $Revision: 2.0.3 $
 //-- $Author: qixiangbing $
 //-- $Log: add current tachometer feature $
+//--
+//-- $Date: 2014-07-01 17:17 $
+//-- $Revision: 2.0.4 $
+//-- $Author: qixiangbing $
+//-- $Log: modify TI LOCK Led to OUTPUT Led1 $
 //-------------------------------------------------------------------------------
 
 module sim_db
@@ -154,7 +159,7 @@ parameter FPGA_SPD6_INIT_HIGH_ADDR= 12'h8ca;
 // SPI SELECT
 parameter FPGA_SPI_SELECT_ADDR = 12'h8d0;
 
-parameter FPGA_VER_CSR = 16'hB626; // fpga version
+parameter FPGA_VER_CSR = 16'hB708; // fpga version
 
 //--------------------REG & WIRE--------------------------
 wire        W_reset_n           ;
@@ -320,7 +325,7 @@ assign     O_spd2_ch[4]        =        (R_OUTPUT_CONTROL[10] & W_O_normal_spd11
 assign     O_spd2_ch[5]        =        (R_OUTPUT_CONTROL[11] & W_O_normal_spd12 ) ;
 
 //-------------------output-----------------------------
-assign O_out1 = !R_IO_OUTPUT[0]; // 1-OFF; 0-ON
+assign O_out1 = (!R_CD_TI_OUTPUT[2]) & (!R_IO_OUTPUT[0]); // 1-OFF; 0-ON
 assign O_out2 = !R_IO_OUTPUT[1]; // 1-OFF; 0-ON
 
 //assign O_led1 = !R_IO_LED[0]; // 1-OFF; 0-ON
