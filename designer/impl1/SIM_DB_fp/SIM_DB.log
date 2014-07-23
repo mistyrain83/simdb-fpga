@@ -4,10 +4,9 @@ Release: v9.1 SP5
 
 Software Version: 9.1.5.1
 PDB file 'D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb' has been loaded successfully.
-DESIGN : SIM_DB;  CHECKSUM : FDE3;  PDB_VERSION : 1.7
+DESIGN : SIM_DB;  CHECKSUM : 84E4;  PDB_VERSION : 1.7
 Driver : 3.0.0 build 1
 programmer '13035' : FlashPro3
-Warning: The programmer with id '12611' in the project file cannot be detected and connected.
 Opened 'D:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp\SIM_DB.pro'
 programmer '13035' : Scan Chain...
 Warning: programmer '13035' : Vpump has been selected on programmer AND an externally provided
@@ -20,9 +19,8 @@ programmer '13035' : Completed erase
 programmer '13035' : Programming FPGA Array
 programmer '13035' : Verifying FPGA Array
 programmer '13035' :         Verifying FPGA Array -- pass
-programmer '13035' : Finished: Tue Jul 08 11:26:05 2014 (Elapsed time 00:00:56)
+programmer '13035' : Finished: Wed Jul 23 14:36:58 2014 (Elapsed time 00:00:52)
 programmer '13035' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 
-Warning: Project 'SIM_DB' has been modified. Do you want to save it? [YES]

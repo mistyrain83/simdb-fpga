@@ -9,7 +9,7 @@ Imported the files:
    D:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc
    D:\GitHub\simdb-fpga\constraint\sim_db_io.pdc
 
-The Import command succeeded ( 00:00:18 )
+The Import command succeeded ( 00:00:19 )
 Info: The design D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb was last modified by software
       version 9.1.5.1.
 Opened an existing Libero design D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
@@ -73,9 +73,9 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        409
+  - Logic combining:        305
 
-    Total macros optimized  409
+    Total macros optimized  305
 
 There were 0 error(s) and 1 warning(s) in this design.
 =====================================================================
@@ -96,7 +96,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   7822  Total:   9216   (84.87%)
+    CORE                       Used:   8189  Total:   9216   (88.86%)
     IO (W/ clocks)             Used:     93  Total:    178   (52.25%)
     Differential IO            Used:      0  Total:     38   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -121,7 +121,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 6000         | 6000
+    COMB    | 6367         | 6367
     SEQ     | 1822         | 1822
 
 I/O Function:
@@ -166,7 +166,7 @@ The following nets have been assigned to a chip global resource:
     268     INT_NET       Net   : I_la_c[5]
                           Driver: I_la_pad_RNISC03[5]
                           Source: NETLIST
-    119     INT_NET       Net   : I_la_c[2]
+    120     INT_NET       Net   : I_la_c[2]
                           Driver: I_la_pad_RNIPC03[2]
                           Source: NETLIST
     103     INT_NET       Net   : I_la_c[3]
@@ -229,7 +229,7 @@ SDC Import: Begin processing constraints...
 SDC Import: End processing constraints
 
 
-The Compile command succeeded ( 00:00:31 )
+The Compile command succeeded ( 00:00:33 )
 ***** Layout Variables *********************************************
 
 Mode: TIMING_DRIVEN
@@ -251,16 +251,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Jul 08 10:21:02 2014
+Timing-driven Placer Started: Wed Jul 23 14:14:48 2014
 
-Placer Finished: Tue Jul 08 10:27:25 2014
-Total Placer CPU Time:     00:06:23
+Placer Finished: Wed Jul 23 14:21:37 2014
+Total Placer CPU Time:     00:06:49
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: SIM_DB                          Started: Tue Jul 08 10:27:53 2014
+Design: SIM_DB                          Started: Wed Jul 23 14:22:07 2014
 
  
 Iterative improvement...
@@ -268,8 +268,8 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: SIM_DB                          
-Finished: Tue Jul 08 10:30:32 2014
-Total CPU Time:     00:02:38            Total Elapsed Time: 00:02:39
+Finished: Wed Jul 23 14:24:29 2014
+Total CPU Time:     00:02:22            Total Elapsed Time: 00:02:22
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -277,14 +277,14 @@ Finished loading the Timing data.
 TIMER: Max delay timing requirements have been met.
 TIMER: Min delay timing requirements have been met.
 
-The Layout command succeeded ( 00:10:25 )
+The Layout command succeeded ( 00:10:37 )
 
-The Export-map command succeeded ( 00:00:38 )
+The Export-map command succeeded ( 00:00:39 )
 Warning: Overwriting the existing file: D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb.
 Wrote to the file: D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb
-CHECKSUM: FDE3
+CHECKSUM: 84E4
 
-The Generate programming file command succeeded ( 00:11:43 )
+The Generate programming file command succeeded ( 00:11:59 )
 Design saved to file D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.adb.
 Design closed.
 

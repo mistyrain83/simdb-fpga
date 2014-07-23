@@ -11,170 +11,187 @@ Available hyper_sources - for debug and ip models
 Finished RTL optimizations (Time elapsed 0h:00m:01s; Memory used current: 56MB peak: 57MB)
 
 @N:"d:\github\simdb-fpga\hdl\freq_dop.v":40:0:40:5|Found counter in view:work.freq_dop(verilog) inst R_count[27:0]
-@N:"d:\github\simdb-fpga\hdl\freq.v":76:3:76:8|Found counter in view:work.freq_module_freq1(verilog) inst cnt[28:0]
-@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":225:47:225:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":232:20:232:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":210:31:210:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
-@N:"d:\github\simdb-fpga\hdl\freq.v":76:3:76:8|Found counter in view:work.freq_module_freq2(verilog) inst cnt[28:0]
-@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":225:47:225:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":232:20:232:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":210:31:210:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
-@N:"d:\github\simdb-fpga\hdl\freq.v":76:3:76:8|Found counter in view:work.freq(verilog) inst cnt[28:0]
-@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":225:47:225:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":232:20:232:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
-@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":210:31:210:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
+@N:"d:\github\simdb-fpga\hdl\freq.v":80:3:80:8|Found counter in view:work.freq_module_freq1(verilog) inst cnt[28:0]
+@N: MF176 |Default generator successful 
+@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":238:47:238:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":245:20:245:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":223:31:223:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
+@N:"d:\github\simdb-fpga\hdl\freq.v":80:3:80:8|Found counter in view:work.freq_module_freq2(verilog) inst cnt[28:0]
+@N: MF176 |Default generator successful 
+@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":238:47:238:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":245:20:245:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":223:31:223:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
+@N:"d:\github\simdb-fpga\hdl\freq.v":80:3:80:8|Found counter in view:work.freq(verilog) inst cnt[28:0]
+@N: MF176 |Default generator successful 
+@N: MF238 :"d:\github\simdb-fpga\hdl\freq.v":238:47:238:71|Found 16 bit incrementor, 'un15_R_pluse_number[15:0]'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":245:20:245:58|Found 29 bit by 29 bit '<' comparator, 'un1_cnt_31'
+@N: MF179 :"d:\github\simdb-fpga\hdl\freq.v":223:31:223:56|Found 27 bit by 27 bit '<' comparator, 'un1_cnt_29'
 @N: MF238 :"d:\github\simdb-fpga\hdl\led.v":47:21:47:33|Found 24 bit incrementor, 'un3_R_cnt_1[23:0]'
-Finished factoring (Time elapsed 0h:00m:14s; Memory used current: 68MB peak: 68MB)
+Finished factoring (Time elapsed 0h:00m:13s; Memory used current: 71MB peak: 72MB)
 
-Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:15s; Memory used current: 74MB peak: 75MB)
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:13s; Memory used current: 76MB peak: 77MB)
 
-Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:19s; Memory used current: 81MB peak: 82MB)
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:18s; Memory used current: 81MB peak: 86MB)
 
-Starting Early Timing Optimization (Time elapsed 0h:00m:20s; Memory used current: 82MB peak: 83MB)
+Starting Early Timing Optimization (Time elapsed 0h:00m:19s; Memory used current: 82MB peak: 86MB)
 
-Finished Early Timing Optimization (Time elapsed 0h:00m:21s; Memory used current: 82MB peak: 83MB)
+Finished Early Timing Optimization (Time elapsed 0h:01m:28s; Memory used current: 87MB peak: 88MB)
 
-Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:22s; Memory used current: 81MB peak: 83MB)
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:01m:28s; Memory used current: 86MB peak: 88MB)
 
-Finished preparing to map (Time elapsed 0h:00m:25s; Memory used current: 82MB peak: 83MB)
+Finished preparing to map (Time elapsed 0h:01m:32s; Memory used current: 91MB peak: 92MB)
 
 
 High Fanout Net Report
 **********************
 
-Driver Instance / Pin Name                    Fanout, notes                     
---------------------------------------------------------------------------------
-un1_R_OUTPUT_CONTROL / Y                      57                                
-un1_R_OUTPUT_CONTROL_1 / Y                    57                                
-un1_R_OUTPUT_CONTROL_2 / Y                    57                                
-un1_R_OUTPUT_CONTROL_3 / Y                    56                                
-un1_R_OUTPUT_CONTROL_4 / Y                    57                                
-un1_R_OUTPUT_CONTROL_5 / Y                    56                                
-module_freq6.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq6.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq6.un1_R_spd131_1 / Y               33                                
-module_freq6.cnt_0_sqmuxa / Y                 29                                
-module_freq5.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq5.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq5.un1_R_spd131_1 / Y               33                                
-module_freq5.cnt_0_sqmuxa / Y                 29                                
-module_freq4.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq4.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq4.un1_R_spd131_1 / Y               33                                
-module_freq4.cnt_0_sqmuxa / Y                 29                                
-module_freq3.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq3.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq3.un1_R_spd131_1 / Y               33                                
-module_freq3.cnt_0_sqmuxa / Y                 29                                
-module_freq2.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq2.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq2.cnt_0_sqmuxa / Y                 29                                
-module_freq1.R_pluse_number_1_sqmuxa / Y      48                                
-module_freq1.R_I_freq_0_sqmuxa_1 / Y          58                                
-module_freq1.un1_R_spd131_1 / Y               33                                
-module_freq1.cnt_0_sqmuxa / Y                 29                                
-module_freq_dop.R_load_flag / Q               29                                
-module_freq_dop.R_count_1_sqmuxa / Y          29                                
-IO_ld_pad[0] / Y                              51                                
-IO_ld_pad[1] / Y                              51                                
-IO_ld_pad[2] / Y                              49                                
-IO_ld_pad[3] / Y                              48                                
-IO_ld_pad[4] / Y                              48                                
-IO_ld_pad[5] / Y                              48                                
-IO_ld_pad[6] / Y                              47                                
-IO_ld_pad[7] / Y                              47                                
-IO_ld_pad[8] / Y                              47                                
-IO_ld_pad[9] / Y                              47                                
-IO_ld_pad[10] / Y                             47                                
-IO_ld_pad[11] / Y                             47                                
-IO_ld_pad[12] / Y                             47                                
-IO_ld_pad[13] / Y                             45                                
-IO_ld_pad[14] / Y                             45                                
-IO_ld_pad[15] / Y                             45                                
-I_la_pad[1] / Y                               310                               
-I_la_pad[2] / Y                               119                               
-I_la_pad[3] / Y                               103                               
-I_la_pad[4] / Y                               27                                
-I_la_pad[5] / Y                               268                               
-I_la_pad[6] / Y                               71                                
-I_la_pad[7] / Y                               39                                
-i_CLKINT2 / Y                                 1822 : 1815 asynchronous set/reset
-module_freq2.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-module_freq6.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-module_freq5.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-module_freq4.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-module_freq3.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-module_freq1.R_pulse_cnt_9_sn_m1_0_a2 / Y     32                                
-================================================================================
+Driver Instance / Pin Name                         Fanout, notes                     
+-------------------------------------------------------------------------------------
+un1_R_OUTPUT_CONTROL / Y                           57                                
+un1_R_OUTPUT_CONTROL_1 / Y                         58                                
+un1_R_OUTPUT_CONTROL_2 / Y                         58                                
+un1_R_OUTPUT_CONTROL_3 / Y                         58                                
+un1_R_OUTPUT_CONTROL_4 / Y                         58                                
+un1_R_OUTPUT_CONTROL_5 / Y                         59                                
+module_freq6.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq6.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq6.un1_R_pulse_cnt_1_sqmuxa_1[1] / Y     77                                
+module_freq6.un1_R_spd131_1 / Y                    33                                
+module_freq6.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq6.cnt_0_sqmuxa / Y                      29                                
+module_freq5.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq5.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq5.un1_R_pulse_cnt_1_sqmuxa_1[1] / Y     80                                
+module_freq5.un1_R_spd131_1 / Y                    33                                
+module_freq5.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq5.cnt_0_sqmuxa / Y                      29                                
+module_freq4.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq4.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq4.un1_R_pulse_cnt_1_sqmuxa_1[1] / Y     68                                
+module_freq4.un1_R_spd131_1 / Y                    33                                
+module_freq4.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq4.cnt_0_sqmuxa / Y                      29                                
+module_freq3.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq3.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq3.un1_R_spd131_1 / Y                    33                                
+module_freq3.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq3.cnt_0_sqmuxa / Y                      29                                
+module_freq2.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq2.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq2.un1_R_pulse_cnt_1_sqmuxa_1[1] / Y     70                                
+module_freq2.un1_R_spd131_1 / Y                    33                                
+module_freq2.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq2.cnt_0_sqmuxa / Y                      29                                
+module_freq1.R_pluse_number_1_sqmuxa / Y           48                                
+module_freq1.R_I_freq_0_sqmuxa_1 / Y               58                                
+module_freq1.un1_R_spd131_1 / Y                    33                                
+module_freq1.un1_R_pulse_cnt_2_sqmuxa / Y          32                                
+module_freq1.cnt_0_sqmuxa / Y                      29                                
+module_freq_dop.R_load_flag / Q                    29                                
+module_freq_dop.R_count_1_sqmuxa / Y               29                                
+IO_ld_pad[0] / Y                                   51                                
+IO_ld_pad[1] / Y                                   51                                
+IO_ld_pad[2] / Y                                   49                                
+IO_ld_pad[3] / Y                                   48                                
+IO_ld_pad[4] / Y                                   48                                
+IO_ld_pad[5] / Y                                   48                                
+IO_ld_pad[6] / Y                                   47                                
+IO_ld_pad[7] / Y                                   47                                
+IO_ld_pad[8] / Y                                   47                                
+IO_ld_pad[9] / Y                                   47                                
+IO_ld_pad[10] / Y                                  47                                
+IO_ld_pad[11] / Y                                  47                                
+IO_ld_pad[12] / Y                                  47                                
+IO_ld_pad[13] / Y                                  45                                
+IO_ld_pad[14] / Y                                  45                                
+IO_ld_pad[15] / Y                                  45                                
+I_la_pad[1] / Y                                    310                               
+I_la_pad[2] / Y                                    120                               
+I_la_pad[3] / Y                                    103                               
+I_la_pad[4] / Y                                    28                                
+I_la_pad[5] / Y                                    268                               
+I_la_pad[6] / Y                                    71                                
+I_la_pad[7] / Y                                    40                                
+i_CLKINT2 / Y                                      1822 : 1815 asynchronous set/reset
+d_m1_0_a2 / Y                                      72                                
+d_m2_0_a2 / Y                                      73                                
+=====================================================================================
 
-@N: FP130 |Promoting Net I_la_c[1] on CLKINT  I_1126 
-@N: FP130 |Promoting Net I_la_c[5] on CLKINT  I_1127 
-@N: FP130 |Promoting Net I_la_c[2] on CLKINT  I_1128 
-@N: FP130 |Promoting Net I_la_c[3] on CLKINT  I_1129 
-Replicating Combinational Instance module_freq1.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Replicating Combinational Instance module_freq3.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Replicating Combinational Instance module_freq4.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Replicating Combinational Instance module_freq5.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Replicating Combinational Instance module_freq6.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Replicating Combinational Instance module_freq2.R_pulse_cnt_9_sn_m1_0_a2, fanout 32 segments 2
-Buffering I_la_c[7], fanout 39 segments 2
+@N: FP130 |Promoting Net I_la_c[1] on CLKINT  I_1321 
+@N: FP130 |Promoting Net I_la_c[5] on CLKINT  I_1322 
+@N: FP130 |Promoting Net I_la_c[2] on CLKINT  I_1323 
+@N: FP130 |Promoting Net I_la_c[3] on CLKINT  I_1324 
+Replicating Combinational Instance d_m2_0_a2, fanout 73 segments 4
+Replicating Combinational Instance d_m1_0_a2, fanout 72 segments 3
+Buffering I_la_c[7], fanout 40 segments 2
 Buffering I_la_c[6], fanout 71 segments 3
-Buffering I_la_c[4], fanout 27 segments 2
+Buffering I_la_c[4], fanout 28 segments 2
 Replicating Combinational Instance module_freq_dop.R_count_1_sqmuxa, fanout 29 segments 2
 Replicating Sequential Instance module_freq_dop.R_load_flag, fanout 30 segments 2
 Replicating Combinational Instance module_freq1.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq1.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
 Replicating Combinational Instance module_freq1.un1_R_spd131_1, fanout 33 segments 2
 Replicating Combinational Instance module_freq1.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq1.R_pluse_number_1_sqmuxa, fanout 48 segments 2
 Replicating Combinational Instance module_freq2.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq2.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance module_freq2.un1_R_spd131_1, fanout 33 segments 2
+Replicating Combinational Instance module_freq2.un1_R_pulse_cnt_1_sqmuxa_1[1], fanout 70 segments 3
 Replicating Combinational Instance module_freq2.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq2.R_pluse_number_1_sqmuxa, fanout 48 segments 2
 Replicating Combinational Instance module_freq3.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq3.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
 Replicating Combinational Instance module_freq3.un1_R_spd131_1, fanout 33 segments 2
 Replicating Combinational Instance module_freq3.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq3.R_pluse_number_1_sqmuxa, fanout 48 segments 2
 Replicating Combinational Instance module_freq4.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq4.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
 Replicating Combinational Instance module_freq4.un1_R_spd131_1, fanout 33 segments 2
+Replicating Combinational Instance module_freq4.un1_R_pulse_cnt_1_sqmuxa_1[1], fanout 68 segments 3
 Replicating Combinational Instance module_freq4.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq4.R_pluse_number_1_sqmuxa, fanout 48 segments 2
 Replicating Combinational Instance module_freq5.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq5.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
 Replicating Combinational Instance module_freq5.un1_R_spd131_1, fanout 33 segments 2
+Replicating Combinational Instance module_freq5.un1_R_pulse_cnt_1_sqmuxa_1[1], fanout 80 segments 4
 Replicating Combinational Instance module_freq5.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq5.R_pluse_number_1_sqmuxa, fanout 48 segments 2
 Replicating Combinational Instance module_freq6.cnt_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance module_freq6.un1_R_pulse_cnt_2_sqmuxa, fanout 32 segments 2
 Replicating Combinational Instance module_freq6.un1_R_spd131_1, fanout 33 segments 2
+Replicating Combinational Instance module_freq6.un1_R_pulse_cnt_1_sqmuxa_1[1], fanout 77 segments 4
 Replicating Combinational Instance module_freq6.R_I_freq_0_sqmuxa_1, fanout 58 segments 3
 Replicating Combinational Instance module_freq6.R_pluse_number_1_sqmuxa, fanout 48 segments 2
-Replicating Combinational Instance un1_R_OUTPUT_CONTROL_5, fanout 58 segments 3
-Replicating Combinational Instance un1_R_OUTPUT_CONTROL_4, fanout 59 segments 3
-Replicating Combinational Instance un1_R_OUTPUT_CONTROL_3, fanout 58 segments 3
-Replicating Combinational Instance un1_R_OUTPUT_CONTROL_2, fanout 59 segments 3
-Replicating Combinational Instance un1_R_OUTPUT_CONTROL_1, fanout 59 segments 3
+Replicating Combinational Instance un1_R_OUTPUT_CONTROL_5, fanout 61 segments 3
+Replicating Combinational Instance un1_R_OUTPUT_CONTROL_4, fanout 60 segments 3
+Replicating Combinational Instance un1_R_OUTPUT_CONTROL_3, fanout 60 segments 3
+Replicating Combinational Instance un1_R_OUTPUT_CONTROL_2, fanout 60 segments 3
+Replicating Combinational Instance un1_R_OUTPUT_CONTROL_1, fanout 60 segments 3
 Replicating Combinational Instance un1_R_OUTPUT_CONTROL, fanout 59 segments 3
-Finished technology mapping (Time elapsed 0h:00m:27s; Memory used current: 80MB peak: 84MB)
+Finished technology mapping (Time elapsed 0h:01m:35s; Memory used current: 97MB peak: 100MB)
 
-Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:28s; Memory used current: 80MB peak: 84MB)
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:01m:36s; Memory used current: 97MB peak: 100MB)
 
 
 Added 5 Buffers
-Added 49 Cells via replication
+Added 65 Cells via replication
 	Added 1 Sequential Cells via replication
-	Added 48 Combinational Cells via replication
-Finished restoring hierarchy (Time elapsed 0h:00m:28s; Memory used current: 81MB peak: 84MB)
+	Added 64 Combinational Cells via replication
+Finished restoring hierarchy (Time elapsed 0h:01m:37s; Memory used current: 97MB peak: 100MB)
 
 Writing Analyst data base D:\GitHub\simdb-fpga\synthesis\SIM_DB.srm
-Finished Writing Netlist Databases (Time elapsed 0h:00m:31s; Memory used current: 75MB peak: 84MB)
+Finished Writing Netlist Databases (Time elapsed 0h:01m:40s; Memory used current: 89MB peak: 100MB)
 
 Writing EDIF Netlist and constraint files
 E-2010.09A-1
-Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:34s; Memory used current: 77MB peak: 84MB)
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:01m:43s; Memory used current: 92MB peak: 100MB)
 
 @W: MT420 |Found inferred clock sim_db|clock with period 40.00ns. A user-defined clock should be declared on object "p:clock"
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Jul 08 10:18:21 2014
+# Timing Report written on Wed Jul 23 14:10:39 2014
 #
 
 
@@ -196,13 +213,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 20.462
+Worst slack in design: 1.301
 
-                   Requested     Estimated     Requested     Estimated                Clock        Clock              
-Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
-----------------------------------------------------------------------------------------------------------------------
-sim_db|clock       25.0 MHz      51.2 MHz      40.000        19.538        20.462     inferred     Inferred_clkgroup_0
-======================================================================================================================
+                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------
+sim_db|clock       25.0 MHz      25.8 MHz      40.000        38.699        1.301     inferred     Inferred_clkgroup_0
+=====================================================================================================================
 
 
 
@@ -211,12 +228,12 @@ sim_db|clock       25.0 MHz      51.2 MHz      40.000        19.538        20.46
 Clock Relationships
 *******************
 
-Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------
-Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
--------------------------------------------------------------------------------------------------------------------
-sim_db|clock  sim_db|clock  |  40.000      20.462  |  No paths    -      |  No paths    -      |  No paths    -    
-===================================================================================================================
+Clocks                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------
+sim_db|clock  sim_db|clock  |  40.000      1.301  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -238,40 +255,40 @@ Detailed Report for Clock: sim_db|clock
 Starting Points with Worst Slack
 ********************************
 
-                              Starting                                               Arrival           
-Instance                      Reference        Type         Pin     Net              Time        Slack 
-                              Clock                                                                    
--------------------------------------------------------------------------------------------------------
-module_freq5.R_I_freq[27]     sim_db|clock     DFN1E1C0     Q       R_I_freq[27]     0.550       20.462
-module_freq3.cnt[2]           sim_db|clock     DFN1C0       Q       cnt[2]           0.434       20.469
-module_freq5.R_I_freq[3]      sim_db|clock     DFN1E1C0     Q       R_I_freq[3]      0.550       20.493
-module_freq5.R_I_freq[15]     sim_db|clock     DFN1E1C0     Q       R_I_freq[15]     0.550       20.493
-module_freq2.R_I_pha[25]      sim_db|clock     DFN1E1C0     Q       R_I_pha[25]      0.550       20.496
-module_freq6.R_I_pha[25]      sim_db|clock     DFN1E1C0     Q       R_I_pha[25]      0.550       20.496
-module_freq3.cnt[1]           sim_db|clock     DFN1C0       Q       cnt[1]           0.434       20.500
-module_freq3.R_I_freq[27]     sim_db|clock     DFN1E1C0     Q       R_I_freq[27]     0.550       20.513
-module_freq1.R_I_freq[27]     sim_db|clock     DFN1E1C0     Q       R_I_freq[27]     0.550       20.513
-module_freq4.cnt[2]           sim_db|clock     DFN1C0       Q       cnt[2]           0.434       20.513
-=======================================================================================================
+                              Starting                                               Arrival          
+Instance                      Reference        Type         Pin     Net              Time        Slack
+                              Clock                                                                   
+------------------------------------------------------------------------------------------------------
+module_freq3.cnt[0]           sim_db|clock     DFN1C0       Q       cnt[0]           0.550       1.301
+module_freq3.cnt[14]          sim_db|clock     DFN1C0       Q       cnt[14]          0.550       1.332
+module_freq3.R_I_pha[25]      sim_db|clock     DFN1E1C0     Q       R_I_pha[25]      0.550       1.336
+module_freq3.cnt[19]          sim_db|clock     DFN1C0       Q       cnt[19]          0.550       1.387
+module_freq3.R_I_pha[24]      sim_db|clock     DFN1E1C0     Q       R_I_pha[24]      0.550       1.439
+module_freq3.R_I_pha[15]      sim_db|clock     DFN1E1C0     Q       R_I_pha[15]      0.550       1.441
+module_freq3.cnt[2]           sim_db|clock     DFN1C0       Q       cnt[2]           0.550       1.468
+module_freq3.R_I_pha[12]      sim_db|clock     DFN1E1C0     Q       R_I_pha[12]      0.550       1.475
+module_freq3.R_I_freq[27]     sim_db|clock     DFN1E1C0     Q       R_I_freq[27]     0.550       1.538
+module_freq3.R_I_pha[14]      sim_db|clock     DFN1E1C0     Q       R_I_pha[14]      0.550       1.545
+======================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                 Starting                                                  Required           
-Instance                         Reference        Type       Pin     Net                   Time         Slack 
+                                 Starting                                                   Required          
+Instance                         Reference        Type       Pin     Net                    Time         Slack
                                  Clock                                                                        
 --------------------------------------------------------------------------------------------------------------
-module_freq5.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.462
-module_freq3.cnt[28]             sim_db|clock     DFN1C0     D       cnt_n28               39.572       20.469
-module_freq2.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.496
-module_freq6.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.496
-module_freq1.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.513
-module_freq3.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.513
-module_freq4.cnt[28]             sim_db|clock     DFN1C0     D       cnt_n28               39.572       20.513
-module_freq_dop.R_count[26]      sim_db|clock     DFN1C0     D       R_count_n26           39.572       20.540
-module_freq4.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_9[31]     39.598       20.542
-module_freq5.cnt[28]             sim_db|clock     DFN1C0     D       cnt_n28               39.572       20.648
+module_freq3.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[31]     39.572       1.301
+module_freq3.R_pulse_cnt[30]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[30]     39.572       1.844
+module_freq4.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[31]     39.572       2.228
+module_freq4.R_pulse_cnt[30]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[30]     39.572       2.771
+module_freq3.R_pulse_cnt[29]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[29]     39.598       2.811
+module_freq4.R_pulse_cnt[29]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[29]     39.572       2.847
+module_freq1.R_pulse_cnt[28]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[28]     39.572       2.869
+module_freq1.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[31]     39.572       3.138
+module_freq6.R_pulse_cnt[31]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[31]     39.598       3.262
+module_freq1.R_pulse_cnt[27]     sim_db|clock     DFN1C0     D       R_pulse_cnt_11[27]     39.572       3.524
 ==============================================================================================================
 
 
@@ -282,85 +299,145 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      40.000
-    - Setup time:                            0.402
+    - Setup time:                            0.428
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         39.598
+    = Required time:                         39.572
 
-    - Propagation time:                      19.136
+    - Propagation time:                      38.271
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     20.462
+    = Slack (critical) :                     1.301
 
-    Number of logic level(s):                19
-    Starting point:                          module_freq5.R_I_freq[27] / Q
-    Ending point:                            module_freq5.R_pulse_cnt[31] / D
+    Number of logic level(s):                39
+    Starting point:                          module_freq3.cnt[0] / Q
+    Ending point:                            module_freq3.R_pulse_cnt[31] / D
     The start point is clocked by            sim_db|clock [rising] on pin CLK
     The end   point is clocked by            sim_db|clock [rising] on pin CLK
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-module_freq5.R_I_freq[27]                   DFN1E1C0     Q        Out     0.550     0.550       -         
-R_I_freq[27]                                Net          -        -       0.288     -           2         
-module_freq5.R_I_freq_RNIN2N2[26]           NOR2         B        In      -         0.839       -         
-module_freq5.R_I_freq_RNIN2N2[26]           NOR2         Y        Out     0.483     1.321       -         
-R_spd117_13                                 Net          -        -       0.240     -           1         
-module_freq5.R_I_freq_RNIA5E5[24]           NOR3A        A        In      -         1.561       -         
-module_freq5.R_I_freq_RNIA5E5[24]           NOR3A        Y        Out     0.496     2.057       -         
-R_spd117_20                                 Net          -        -       0.240     -           1         
-module_freq5.R_I_freq_RNIU5ED[0]            NOR3C        C        In      -         2.297       -         
-module_freq5.R_I_freq_RNIU5ED[0]            NOR3C        Y        Out     0.497     2.794       -         
-R_spd117_24                                 Net          -        -       0.240     -           1         
-module_freq5.R_I_freq_RNI8NF21[0]           OR3C         C        In      -         3.035       -         
-module_freq5.R_I_freq_RNI8NF21[0]           OR3C         Y        Out     0.497     3.532       -         
-R_spd117                                    Net          -        -       1.327     -           11        
-module_freq5.R_I_pha_RNIPURI1_0[10]         NOR2A        A        In      -         4.858       -         
-module_freq5.R_I_pha_RNIPURI1_0[10]         NOR2A        Y        Out     0.469     5.327       -         
-R_pulse_cnt_1_sqmuxa_2_0                    Net          -        -       0.602     -           3         
-module_freq5.R_spd1_RNIAH8Q1                NOR2B        B        In      -         5.929       -         
-module_freq5.R_spd1_RNIAH8Q1                NOR2B        Y        Out     0.469     6.398       -         
-R_pulse_cnt_1_sqmuxa_0                      Net          -        -       0.602     -           3         
-module_freq5.R_load_pulse_flag_RNIABDE6     AO1C         B        In      -         7.000       -         
-module_freq5.R_load_pulse_flag_RNIABDE6     AO1C         Y        Out     0.445     7.445       -         
-R_pulse_cnt_1_sqmuxa_2                      Net          -        -       0.288     -           2         
-module_freq5.un1_R_pulse_cnt.I_1            AND2         B        In      -         7.733       -         
-module_freq5.un1_R_pulse_cnt.I_1            AND2         Y        Out     0.469     8.202       -         
-DWACT_ADD_CI_0_TMP[0]                       Net          -        -       0.288     -           2         
-module_freq5.un1_R_pulse_cnt.I_171          NOR2B        A        In      -         8.490       -         
-module_freq5.un1_R_pulse_cnt.I_171          NOR2B        Y        Out     0.384     8.874       -         
-DWACT_ADD_CI_0_g_array_1[0]                 Net          -        -       0.602     -           3         
-module_freq5.un1_R_pulse_cnt.I_187          NOR2B        A        In      -         9.476       -         
-module_freq5.un1_R_pulse_cnt.I_187          NOR2B        Y        Out     0.384     9.861       -         
-DWACT_ADD_CI_0_g_array_2[0]                 Net          -        -       0.884     -           4         
-module_freq5.un1_R_pulse_cnt.I_143          NOR2B        A        In      -         10.745      -         
-module_freq5.un1_R_pulse_cnt.I_143          NOR2B        Y        Out     0.384     11.129      -         
-DWACT_ADD_CI_0_g_array_3[0]                 Net          -        -       0.955     -           5         
-module_freq5.un1_R_pulse_cnt.I_186          NOR2B        A        In      -         12.084      -         
-module_freq5.un1_R_pulse_cnt.I_186          NOR2B        Y        Out     0.384     12.468      -         
-DWACT_ADD_CI_0_g_array_4[0]                 Net          -        -       0.955     -           5         
-module_freq5.un1_R_pulse_cnt.I_154          NOR2B        A        In      -         13.424      -         
-module_freq5.un1_R_pulse_cnt.I_154          NOR2B        Y        Out     0.384     13.808      -         
-DWACT_ADD_CI_0_g_array_9[0]                 Net          -        -       0.884     -           4         
-module_freq5.un1_R_pulse_cnt.I_182          NOR2B        A        In      -         14.692      -         
-module_freq5.un1_R_pulse_cnt.I_182          NOR2B        Y        Out     0.384     15.076      -         
-DWACT_ADD_CI_0_g_array_10_2[0]              Net          -        -       0.602     -           3         
-module_freq5.un1_R_pulse_cnt.I_144          NOR2B        A        In      -         15.678      -         
-module_freq5.un1_R_pulse_cnt.I_144          NOR2B        Y        Out     0.384     16.062      -         
-DWACT_ADD_CI_0_g_array_11_6[0]              Net          -        -       0.288     -           2         
-module_freq5.un1_R_pulse_cnt.I_153          NOR2B        A        In      -         16.351      -         
-module_freq5.un1_R_pulse_cnt.I_153          NOR2B        Y        Out     0.384     16.735      -         
-DWACT_ADD_CI_0_g_array_12_14[0]             Net          -        -       0.240     -           1         
-module_freq5.un1_R_pulse_cnt.I_121          XOR2         B        In      -         16.975      -         
-module_freq5.un1_R_pulse_cnt.I_121          XOR2         Y        Out     0.700     17.674      -         
-un1_R_pulse_cnt[31]                         Net          -        -       0.240     -           1         
-module_freq5.R_pulse_cnt_RNO_0[31]          MX2C         B        In      -         17.915      -         
-module_freq5.R_pulse_cnt_RNO_0[31]          MX2C         Y        Out     0.437     18.352      -         
-N_95                                        Net          -        -       0.240     -           1         
-module_freq5.R_pulse_cnt_RNO[31]            NOR2A        B        In      -         18.592      -         
-module_freq5.R_pulse_cnt_RNO[31]            NOR2A        Y        Out     0.304     18.896      -         
-R_pulse_cnt_9[31]                           Net          -        -       0.240     -           1         
-module_freq5.R_pulse_cnt[31]                DFN1C0       D        In      -         19.136      -         
-==========================================================================================================
-Total path delay (propagation time + setup) of 19.538 is 9.290(47.6%) logic and 10.248(52.4%) route.
+Instance / Net                                                           Pin      Pin               Arrival     No. of    
+Name                                                          Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------
+module_freq3.cnt[0]                                           DFN1C0     Q        Out     0.550     0.550       -         
+cnt[0]                                                        Net        -        -       1.224     -           8         
+module_freq3.R_I_pha_RNI8E5B[0]                               XA1C       B        In      -         1.774       -         
+module_freq3.R_I_pha_RNI8E5B[0]                               XA1C       Y        Out     0.469     2.243       -         
+R_spd111_NE_0                                                 Net        -        -       0.240     -           1         
+module_freq3.R_I_pha_RNI5DHD[26]                              XA1A       C        In      -         2.483       -         
+module_freq3.R_I_pha_RNI5DHD[26]                              XA1A       Y        Out     0.532     3.015       -         
+R_spd111_NE_14                                                Net        -        -       0.240     -           1         
+module_freq3.R_I_pha_RNIHQ7I[21]                              NOR3C      C        In      -         3.255       -         
+module_freq3.R_I_pha_RNIHQ7I[21]                              NOR3C      Y        Out     0.479     3.734       -         
+R_spd111_NE_21                                                Net        -        -       0.240     -           1         
+module_freq3.R_I_pha_RNIBUKC2[21]                             NOR3C      C        In      -         3.974       -         
+module_freq3.R_I_pha_RNIBUKC2[21]                             NOR3C      Y        Out     0.479     4.453       -         
+R_spd111_NE_25                                                Net        -        -       0.240     -           1         
+module_freq3.R_I_pha_RNI71364[23]                             OR3C       C        In      -         4.693       -         
+module_freq3.R_I_pha_RNI71364[23]                             OR3C       Y        Out     0.479     5.172       -         
+R_spd112                                                      Net        -        -       1.063     -           6         
+module_freq3.R_spd1_RNI677B8                                  OR3A       C        In      -         6.235       -         
+module_freq3.R_spd1_RNI677B8                                  OR3A       Y        Out     0.509     6.744       -         
+un1_R_spd117_3_i                                              Net        -        -       0.240     -           1         
+module_freq3.R_load_pulse_flag_RNI3S8P8                       OR2B       B        In      -         6.984       -         
+module_freq3.R_load_pulse_flag_RNI3S8P8                       OR2B       Y        Out     0.386     7.370       -         
+R_pulse_cnt_1_sqmuxa_1                                        Net        -        -       1.224     -           8         
+module_freq3.R_spd1_RNIOC0LH_0                                OR2B       B        In      -         8.594       -         
+module_freq3.R_spd1_RNIOC0LH_0                                OR2B       Y        Out     0.469     9.062       -         
+un1_R_pulse_cnt_1_sqmuxa_1_1[1]                               Net        -        -       1.842     -           24        
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I4_un1_CO1_1      MX2A       A        In      -         10.904      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I4_un1_CO1_1      MX2A       Y        Out     0.424     11.328      -         
+I4_un1_CO1                                                    Net        -        -       0.884     -           4         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I9_CO1_0_tz_0     AO1B       B        In      -         12.212      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I9_CO1_0_tz_0     AO1B       Y        Out     0.445     12.657      -         
+ADD_32x32_slow_I9_CO1_0_tz                                    Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I13_CO1_0_a0      NOR3C      C        In      -         12.946      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I13_CO1_0_a0      NOR3C      Y        Out     0.479     13.425      -         
+ADD_32x32_slow_I13_CO1_0_a0_0                                 Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I13_CO1_1         AO1A       C        In      -         13.665      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I13_CO1_1         AO1A       Y        Out     0.472     14.137      -         
+ADD_32x32_slow_I13_CO1_0                                      Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I14_un1_CO1_2     AOI1B      A        In      -         14.739      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I14_un1_CO1_2     AOI1B      Y        Out     0.697     15.436      -         
+ADD_32x32_slow_I14_un1_CO1_0_0                                Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I15_CO1_0_tz      OAI1       B        In      -         16.039      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I15_CO1_0_tz      OAI1       Y        Out     0.454     16.493      -         
+ADD_32x32_slow_I15_CO1_0_tz                                   Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I15_CO1_0         OR2B       A        In      -         16.733      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I15_CO1_0         OR2B       Y        Out     0.384     17.117      -         
+ADD_32x32_slow_I15_CO1_0                                      Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I16_un5_CO1       AO1        B        In      -         17.719      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I16_un5_CO1       AO1        Y        Out     0.423     18.142      -         
+I16_un5_CO1                                                   Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I16_un1_CO1       AO1B       C        In      -         18.383      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I16_un1_CO1       AO1B       Y        Out     0.489     18.872      -         
+I16_un1_CO1                                                   Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I17_CO1           AO13       A        In      -         19.474      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I17_CO1           AO13       Y        Out     0.793     20.267      -         
+N416                                                          Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I18_un5_CO1       OR2A       A        In      -         20.555      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I18_un5_CO1       OR2A       Y        Out     0.348     20.903      -         
+I18_un5_CO1                                                   Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I18_un1_CO1       AO1B       C        In      -         21.143      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I18_un1_CO1       AO1B       Y        Out     0.489     21.633      -         
+I18_un1_CO1                                                   Net        -        -       0.884     -           4         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I19_CO1_0         OA1A       B        In      -         22.517      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I19_CO1_0         OA1A       Y        Out     0.487     23.003      -         
+ADD_32x32_slow_I19_CO1_0                                      Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I20_un1_CO1_0     OA1A       B        In      -         23.291      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I20_un1_CO1_0     OA1A       Y        Out     0.487     23.778      -         
+ADD_32x32_slow_I20_un1_CO1_0                                  Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I21_un5_CO1       OA1B       A        In      -         24.380      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I21_un5_CO1       OA1B       Y        Out     0.487     24.867      -         
+I21_un5_CO1                                                   Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I21_CO1           AO1        C        In      -         25.107      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I21_CO1           AO1        Y        Out     0.472     25.580      -         
+N424                                                          Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I22_un1_CO1       AO13       B        In      -         25.868      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I22_un1_CO1       AO13       Y        Out     0.697     26.565      -         
+I22_un1_CO1                                                   Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I23_CO1           AO13       B        In      -         26.853      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I23_CO1           AO13       Y        Out     0.697     27.550      -         
+N428                                                          Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I24_un1_CO1       AO13       B        In      -         27.838      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I24_un1_CO1       AO13       Y        Out     0.697     28.535      -         
+I24_un1_CO1                                                   Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1_0_tz      OR2A       B        In      -         29.137      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1_0_tz      OR2A       Y        Out     0.483     29.620      -         
+ADD_32x32_slow_I25_CO1_0_tz                                   Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1_0         OR2B       A        In      -         29.860      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1_0         OR2B       Y        Out     0.384     30.245      -         
+ADD_32x32_slow_I25_CO1_0                                      Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1           OR2B       B        In      -         30.485      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I25_CO1           OR2B       Y        Out     0.386     30.870      -         
+N432                                                          Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I26_un1_CO1       AO13       B        In      -         31.473      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I26_un1_CO1       AO13       Y        Out     0.697     32.169      -         
+I26_un1_CO1                                                   Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I27_CO1_i_a3      AO1A       B        In      -         32.458      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I27_CO1_i_a3      AO1A       Y        Out     0.447     32.904      -         
+N_18                                                          Net        -        -       0.602     -           3         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I27_CO1_i         NAND2      A        In      -         33.507      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I27_CO1_i         NAND2      Y        Out     0.384     33.891      -         
+N_11                                                          Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I29_CO1_i_a3      NOR2A      B        In      -         34.179      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I29_CO1_i_a3      NOR2A      Y        Out     0.288     34.467      -         
+N_23                                                          Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I29_CO1_i_o3      OR3        C        In      -         34.707      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I29_CO1_i_o3      OR3        Y        Out     0.561     35.268      -         
+N_13                                                          Net        -        -       0.288     -           2         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I30_un1_CO1_i     AO18       A        In      -         35.556      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I30_un1_CO1_i     AO18       Y        Out     0.304     35.860      -         
+N_9                                                           Net        -        -       0.240     -           1         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I31_Y_0           XOR3       C        In      -         36.100      -         
+module_freq3.un1_R_pulse_cnt.ADD_32x32_slow_I31_Y_0           XOR3       Y        Out     0.736     36.836      -         
+un1_R_pulse_cnt[31]                                           Net        -        -       0.240     -           1         
+module_freq3.R_pulse_cnt_RNO_0[31]                            MX2C       B        In      -         37.076      -         
+module_freq3.R_pulse_cnt_RNO_0[31]                            MX2C       Y        Out     0.427     37.503      -         
+N_95                                                          Net        -        -       0.240     -           1         
+module_freq3.R_pulse_cnt_RNO[31]                              NOR2A      B        In      -         37.743      -         
+module_freq3.R_pulse_cnt_RNO[31]                              NOR2A      Y        Out     0.288     38.031      -         
+R_pulse_cnt_11[31]                                            Net        -        -       0.240     -           1         
+module_freq3.R_pulse_cnt[31]                                  DFN1C0     D        In      -         38.271      -         
+==========================================================================================================================
+Total path delay (propagation time + setup) of 38.699 is 20.085(51.9%) logic and 18.615(48.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -372,64 +449,73 @@ Target Part: A3P400_FBGA256_-2
 Report for cell sim_db.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2   410      1.0      410.0
+              AND2   283      1.0      283.0
              AND2A    72      1.0       72.0
               AND3   266      1.0      266.0
              AND3A     6      1.0        6.0
-               AO1   232      1.0      232.0
-              AO1A    15      1.0       15.0
-              AO1B    10      1.0       10.0
-              AO1C   189      1.0      189.0
-              AO1D     3      1.0        3.0
-              AOI1     5      1.0        5.0
+               AO1   244      1.0      244.0
+              AO13    74      1.0       74.0
+              AO18    13      1.0       13.0
+              AO1A    25      1.0       25.0
+              AO1B    49      1.0       49.0
+              AO1C   205      1.0      205.0
+              AO1D     4      1.0        4.0
+              AOI1     7      1.0        7.0
              AOI1A   126      1.0      126.0
-             AOI1B    23      1.0       23.0
-               AX1    18      1.0       18.0
-              AX1A    18      1.0       18.0
-              AX1C     1      1.0        1.0
-              AX1E     7      1.0        7.0
-              AXO3     1      1.0        1.0
+             AOI1B    34      1.0       34.0
+               AX1    11      1.0       11.0
+              AX1A    12      1.0       12.0
+              AX1B     1      1.0        1.0
+              AX1C     4      1.0        4.0
+              AX1D    14      1.0       14.0
+              AX1E    20      1.0       20.0
+              AXO3     3      1.0        3.0
               BUFF     5      1.0        5.0
             CLKINT     6      0.0        0.0
                GND     9      0.0        0.0
                INV     6      1.0        6.0
-               MX2   765      1.0      765.0
-              MX2A     8      1.0        8.0
-              MX2C   300      1.0      300.0
-             NAND2     1      1.0        1.0
+               MX2   777      1.0      777.0
+              MX2A    11      1.0       11.0
+              MX2B     6      1.0        6.0
+              MX2C   287      1.0      287.0
+             NAND2     3      1.0        3.0
               NOR2   360      1.0      360.0
-             NOR2A   485      1.0      485.0
-             NOR2B   409      1.0      409.0
-              NOR3    49      1.0       49.0
-             NOR3A   161      1.0      161.0
-             NOR3B    32      1.0       32.0
-             NOR3C   213      1.0      213.0
-               OA1    40      1.0       40.0
-              OA1A    62      1.0       62.0
-              OAI1     2      1.0        2.0
-               OR2    29      1.0       29.0
-              OR2A   357      1.0      357.0
-              OR2B    67      1.0       67.0
-               OR3     3      1.0        3.0
-              OR3A    21      1.0       21.0
-              OR3B    48      1.0       48.0
-              OR3C    39      1.0       39.0
+             NOR2A   506      1.0      506.0
+             NOR2B   289      1.0      289.0
+              NOR3    47      1.0       47.0
+             NOR3A   171      1.0      171.0
+             NOR3B    42      1.0       42.0
+             NOR3C   257      1.0      257.0
+               OA1    54      1.0       54.0
+              OA1A    80      1.0       80.0
+              OA1B    16      1.0       16.0
+              OA1C     6      1.0        6.0
+              OAI1     4      1.0        4.0
+               OR2    59      1.0       59.0
+              OR2A   373      1.0      373.0
+              OR2B   131      1.0      131.0
+               OR3    12      1.0       12.0
+              OR3A    17      1.0       17.0
+              OR3B    51      1.0       51.0
+              OR3C    55      1.0       55.0
                VCC     9      0.0        0.0
               XA1A   124      1.0      124.0
-              XA1B    45      1.0       45.0
-              XA1C    77      1.0       77.0
-             XNOR2   628      1.0      628.0
-              XOR2   671      1.0      671.0
+              XA1B    75      1.0       75.0
+              XA1C    69      1.0       69.0
+             XNOR2   682      1.0      682.0
+             XNOR3   115      1.0      115.0
+              XOR2   489      1.0      489.0
+              XOR3    20      1.0       20.0
 
 
               DFN1     6      1.0        6.0
-            DFN1C0   546      1.0      546.0
-          DFN1E0C0    17      1.0       17.0
+            DFN1C0   548      1.0      548.0
+          DFN1E0C0    15      1.0       15.0
           DFN1E1C0  1151      1.0     1151.0
           DFN1E1P0    96      1.0       96.0
             DFN1P0     6      1.0        6.0
                    -----          ----------
-             TOTAL  8255              8231.0
+             TOTAL  8518              8494.0
 
 
   IO Cell usage:
@@ -441,14 +527,14 @@ Report for cell sim_db.verilog
              TOTAL    93
 
 
-Core Cells         : 8231 of 9216 (89%)
+Core Cells         : 8494 of 9216 (92%)
 IO Cells           : 93
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 12 (0%)
 
 Mapper successful!
-Process took 0h:00m:42s realtime, 0h:00m:35s cputime
-# Tue Jul 08 10:18:22 2014
+Process took 0h:01m:49s realtime, 0h:01m:44s cputime
+# Wed Jul 23 14:10:39 2014
 
 ###########################################################]

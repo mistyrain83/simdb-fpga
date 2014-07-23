@@ -1,7 +1,7 @@
 #add_file options
 add_file -verilog "D:/GitHub/simdb-fpga/hdl/freq_dop.v"
-add_file -verilog "D:/GitHub/simdb-fpga/hdl/freq.v"
 add_file -verilog "D:/GitHub/simdb-fpga/hdl/led.v"
+add_file -verilog "D:/GitHub/simdb-fpga/hdl/freq.v"
 add_file -verilog "D:/GitHub/simdb-fpga/hdl/sim_db_fpga.v"
 set_option -top_module sim_db
 

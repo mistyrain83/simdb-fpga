@@ -23,6 +23,10 @@
  * \version :V1.3
  * \date :2014-07-08 Qixb
  * \description : modify limited-mode pulse to (pulse + 1).
+ *
+ * \version :V1.4
+ * \date :2014-07-23 Qixb
+ * \description : modify O_report_pulse can dec.
  */
 
 `timescale 1ns/100ps
@@ -191,9 +195,18 @@ module freq(
                       R_spd1    <=  !R_spd1;
                     
 					  // pulse counter addition
-                      if(R_spd1 == 1'b1)
+                      if((R_pluse_number != 0) && (R_spd1 == 1'b1))
                         begin
-                          R_pulse_cnt <= R_pulse_cnt + 1'b1;
+						  if(R_dir == 1'b0)
+						  begin
+							R_pulse_cnt <= R_pulse_cnt + 1'b1;
+						  end
+						  else if(R_dir == 1'b1)
+						  begin
+							R_pulse_cnt <= R_pulse_cnt - 1'b1;
+						  end
+						  else
+							;
                         end
                     
 					  // in limited mode
