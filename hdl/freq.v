@@ -27,6 +27,10 @@
  * \version :V1.4
  * \date :2014-07-23 Qixb
  * \description : modify O_report_pulse can dec.
+ *
+ * \version :V1.5
+ * \date :2014-07-29 Qixb
+ * \description : modify R_load method.
  */
 
 `timescale 1ns/100ps
@@ -163,8 +167,8 @@ module freq(
 			
             if(R_I_freq == 0)
               begin
-               R_spd1  <= 1'b1;
-               R_spd2  <= 1'b1;
+               R_spd1  <= 1'b0;
+               R_spd2  <= 1'b0;
               end
             else 
             begin
@@ -185,7 +189,7 @@ module freq(
 					if(R_spd_cnt == 2)
 					  begin
 						R_spd1 <= !R_spd1;
-						R_spd_cnt <= 8'b0;
+						R_spd_cnt <= 8'h00;
 					  end
 				  end
 				else
@@ -219,75 +223,37 @@ module freq(
 				  end
             end
 
-            // R_load valid
-            if  ((R_load_flag&(I_freq[27:1] <= cnt[26:0])) | (R_load_flag&(R_I_freq[27:0] == 0)))
-                begin
-                if((R_I_freq == 0) | (I_freq == 0))
-                    begin
-                    R_spd1          <= 1'b1;
-                    R_spd2          <= 1'b1;  
-                    cnt             <= 29'b0;
-                    R_I_pha[30:0]   <= I_pha[30:0];
-                    R_dir           <= I_pha[31];
-                    R_I_freq[27:0]  <= I_freq[27:0];
-                    R_load_flag     <= 1'b0;
-                    end 
-                
-                if (I_limited_Pluse)
+			// load valid
+			if(R_load_flag)
+			begin
+				cnt             <= 29'b0;
+				R_I_pha[30:0]   <= I_pha[30:0];
+				R_dir           <= I_pha[31];
+				R_I_freq[27:0]  <= I_freq[27:0];
+				R_load_flag     <= 1'b0;
+				
+				if (I_limited_Pluse)
                  begin
-                  R_pluse_number[16:1]      <= I_pluse_number[15:0] + 1; 
+                  R_pluse_number[16:1]      <= I_pluse_number[15:0]; 
                  end
                 else
                  begin
                   R_pluse_number            <= 17'h1fffe; 
                  end
-
-                if((cnt >= (R_I_pha[27:0] + R_I_pha[27:0])) & (R_I_freq[27:0] != 0))
-                  begin                 
-                  R_spd2                  <= !R_spd2;                                
-                  cnt                     <= 27'b0;                
-                  R_I_pha[30:0]           <= I_pha[30:0];
-                  R_dir                   <= I_pha[31];
-                  R_I_freq[27:0]          <= I_freq[27:0];
-                  R_load_flag             <= 1'b0;
-                  end
-                  
-              end    
-             else if(R_load_flag & (cnt==0) & (R_I_freq[27:0] != 0))
-                begin
-                  if(I_freq == 0)
-                    begin
-                      R_spd1  <= 1'b1;
-                      R_spd2  <= 1'b1;               
-                    end
-				  // if limited pulse mode
-                  if (I_limited_Pluse)
-                    begin
-                       R_pluse_number[16:1]      <= I_pluse_number[15:0] + 1;
-                    end
-                  else
-                   begin
-                       R_pluse_number            <= 17'h1fffe;
-                   end
-                   
-                  R_I_pha[30:0]           <= I_pha[30:0];
-                  R_dir                   <= I_pha[31];
-                  R_I_freq[27:0]          <= I_freq[27:0];
-                  R_load_flag             <= 1'b0;
-                end
-              end
-            else
-              begin          
-              R_spd1                 <= 1'b1;
-              R_spd2                 <= 1'b1;
-              cnt                    <= 29'b0;
-              R_pulse_cnt            <= 32'b0;
-              end               
-      end
+			end
+	end
+	  else
+		  begin          
+		  R_spd1                 <= 1'b1;
+		  R_spd2                 <= 1'b1;
+		  cnt                    <= 29'b0;
+		  R_pulse_cnt            <= 32'b0;
+		  end
+	end		  
    end
 //----------------------------------------------------------------------
-   assign  O_spd1      =  (R_pluse_number == 0)? ((R_dir == 1'b0)? 1:0) : R_O_spd1;
-   assign  O_spd2      =  (R_pluse_number == 0)? ((R_dir == 1'b0)? 0:1) : R_O_spd2;
+   assign  O_spd1      =  (R_pluse_number == 0)? ((R_dir == 1'b0)? 0:1) : R_O_spd1;
+   assign  O_spd2      =  (R_pluse_number == 0)? ((R_dir == 1'b0)? 1:0) : R_O_spd2;
    assign  O_report_pulse[31:0] = R_pulse_cnt[31:0];
    // if 1, pulse is over in limited mode
    assign  O_limited_Pluse_finished = (R_pluse_number == 0)? 1:0;

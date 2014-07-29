@@ -4,7 +4,7 @@ Release: v9.1 SP5
 
 Software Version: 9.1.5.1
 PDB file 'D:\GitHub\simdb-fpga\designer\impl1\SIM_DB.pdb' has been loaded successfully.
-DESIGN : SIM_DB;  CHECKSUM : 84E4;  PDB_VERSION : 1.7
+DESIGN : SIM_DB;  CHECKSUM : 079E;  PDB_VERSION : 1.7
 Driver : 3.0.0 build 1
 programmer '13035' : FlashPro3
 Opened 'D:\GitHub\simdb-fpga\designer\impl1\SIM_DB_fp\SIM_DB.pro'
@@ -13,13 +13,13 @@ Warning: programmer '13035' : Vpump has been selected on programmer AND an exter
          Vpump has also been detected. Using externally provided Vpump voltage source.
 programmer '13035' : Scan Chain PASSED.
 programmer '13035' : Executing action PROGRAM
-programmer '13035' : EXPORT FSN[48] = 80f179446c60
+programmer '13035' : EXPORT FSN[48] = 80f179487c78
 programmer '13035' : Erase ...
 programmer '13035' : Completed erase
 programmer '13035' : Programming FPGA Array
 programmer '13035' : Verifying FPGA Array
 programmer '13035' :         Verifying FPGA Array -- pass
-programmer '13035' : Finished: Wed Jul 23 14:36:58 2014 (Elapsed time 00:00:52)
+programmer '13035' : Finished: Tue Jul 29 14:41:10 2014 (Elapsed time 00:00:53)
 programmer '13035' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
