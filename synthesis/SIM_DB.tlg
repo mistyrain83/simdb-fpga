@@ -3,34 +3,32 @@ Selecting top level module sim_db
 
 @N: CG364 :"d:\Microsemi\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3.v":1959:7:1959:12|Synthesizing module CLKINT
 
-@N: CG364 :"D:\GitHub\simdb-fpga\hdl\freq_dop.v":18:7:18:14|Synthesizing module freq_dop
+@N: CG364 :"E:\GitHub\simdb-fpga\hdl\freq_dop.v":18:7:18:14|Synthesizing module freq_dop
 
-@N: CG179 :"D:\GitHub\simdb-fpga\hdl\freq_dop.v":86:35:86:39|Removing redundant assignment
-@W: CL265 :"D:\GitHub\simdb-fpga\hdl\freq_dop.v":40:0:40:5|Pruning bit 0 of R_I_freq[27:0] - not in use ...
+@N: CG179 :"E:\GitHub\simdb-fpga\hdl\freq_dop.v":86:35:86:39|Removing redundant assignment
+@W: CL265 :"E:\GitHub\simdb-fpga\hdl\freq_dop.v":40:0:40:5|Pruning bit 0 of R_I_freq[27:0] - not in use ...
 
-@N: CG364 :"D:\GitHub\simdb-fpga\hdl\freq.v":37:7:37:10|Synthesizing module freq
+@N: CG364 :"E:\GitHub\simdb-fpga\hdl\freq.v":33:7:33:10|Synthesizing module freq
 
-@W: CL265 :"D:\GitHub\simdb-fpga\hdl\freq.v":84:3:84:8|Pruning bit 30 of R_I_pha[30:0] - not in use ...
+@W: CL265 :"E:\GitHub\simdb-fpga\hdl\freq.v":80:3:80:8|Pruning bit 30 of R_I_pha[30:0] - not in use ...
 
-@W: CL265 :"D:\GitHub\simdb-fpga\hdl\freq.v":84:3:84:8|Pruning bit 29 of R_I_pha[30:0] - not in use ...
+@W: CL265 :"E:\GitHub\simdb-fpga\hdl\freq.v":80:3:80:8|Pruning bit 29 of R_I_pha[30:0] - not in use ...
 
-@W: CL265 :"D:\GitHub\simdb-fpga\hdl\freq.v":84:3:84:8|Pruning bit 28 of R_I_pha[30:0] - not in use ...
+@W: CL265 :"E:\GitHub\simdb-fpga\hdl\freq.v":80:3:80:8|Pruning bit 28 of R_I_pha[30:0] - not in use ...
 
-@N: CG364 :"D:\GitHub\simdb-fpga\hdl\led.v":21:7:21:9|Synthesizing module led
+@N: CG364 :"E:\GitHub\simdb-fpga\hdl\led.v":21:7:21:9|Synthesizing module led
 
-@N: CG364 :"D:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":47:7:47:12|Synthesizing module sim_db
+@N: CG364 :"E:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":47:7:47:12|Synthesizing module sim_db
 
-@W: CL169 :"D:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":373:0:373:5|Pruning Register R_I_lcs_n_1 
+@W: CL169 :"E:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":373:0:373:5|Pruning Register R_I_lcs_n_1 
 
-@W: CL159 :"D:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":56:20:56:25|Input I_lclk is unused
-@W: CL190 :"D:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Optimizing register bit R_cnt[24] to a constant 0
-@W: CL190 :"D:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Optimizing register bit R_cnt[25] to a constant 0
-@W: CL260 :"D:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Pruning Register bit 25 of R_cnt[25:0] 
+@W: CL159 :"E:\GitHub\simdb-fpga\hdl\sim_db_fpga.v":56:20:56:25|Input I_lclk is unused
+@W: CL190 :"E:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Optimizing register bit R_cnt[24] to a constant 0
+@W: CL190 :"E:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Optimizing register bit R_cnt[25] to a constant 0
+@W: CL260 :"E:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Pruning Register bit 25 of R_cnt[25:0] 
 
-@W: CL260 :"D:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Pruning Register bit 24 of R_cnt[25:0] 
+@W: CL260 :"E:\GitHub\simdb-fpga\hdl\led.v":33:4:33:9|Pruning Register bit 24 of R_cnt[25:0] 
 
-@W: CL246 :"D:\GitHub\simdb-fpga\hdl\freq.v":40:22:40:27|Input port bits 31 to 28 of I_freq[31:0] are unused
+@W: CL246 :"E:\GitHub\simdb-fpga\hdl\freq.v":37:22:37:26|Input port bits 30 to 28 of I_pha[31:0] are unused
 
-@W: CL246 :"D:\GitHub\simdb-fpga\hdl\freq.v":41:22:41:26|Input port bits 30 to 28 of I_pha[31:0] are unused
-
-@W: CL159 :"D:\GitHub\simdb-fpga\hdl\freq_dop.v":23:22:23:27|Input I_stat is unused
+@W: CL159 :"E:\GitHub\simdb-fpga\hdl\freq_dop.v":23:22:23:27|Input I_stat is unused

@@ -3,6 +3,9 @@ simdb-fpga
 
 sim_db board fpga project, running on Actel A3P400 256 FBGA
 
+V1104 0xB825 
+1. modify pulse report can dec.
+
 V2.1.3 Version: 0xB626; hard reset; NOT verified.
 1. add spi select feature.
 2. add current tachometer.

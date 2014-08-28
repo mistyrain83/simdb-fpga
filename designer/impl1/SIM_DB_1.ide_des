@@ -1,0 +1,13 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "E:\GitHub\simdb-fpga\designer\impl1\SIM_DB_1.adb"
+LIST SOURCE_FILES
+VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB.edn;edn"
+VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;sdc"
+VALUE "E:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "E:\GitHub\simdb-fpga\synthesis\SIM_DB_sdc.sdc;Used"
+VALUE "E:\GitHub\simdb-fpga\constraint\sim_db_io.pdc;Used"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

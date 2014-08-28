@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>sim_db</design>
-	<target_edif>D:\GitHub\simdb-fpga\synthesis\SIM_DB.edn</target_edif>
+	<target_edif>E:\GitHub\simdb-fpga\synthesis\SIM_DB.edn</target_edif>
 </SynplifyOutput>

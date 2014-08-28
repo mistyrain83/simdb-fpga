@@ -159,7 +159,7 @@ parameter FPGA_SPD6_INIT_HIGH_ADDR= 12'h8ca;
 // SPI SELECT
 parameter FPGA_SPI_SELECT_ADDR = 12'h8d0;
 
-parameter FPGA_VER_CSR = 16'hB729; // fpga version
+parameter FPGA_VER_CSR = 16'hB825; // fpga version
 
 //--------------------REG & WIRE--------------------------
 wire        W_reset_n           ;
